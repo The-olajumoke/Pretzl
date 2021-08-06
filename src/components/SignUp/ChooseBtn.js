@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { FiArrowRight } from "react-icons/fi";
+// import { FiArrowRight } from "react-icons/fi";
 
 function ChooseBtn({ onClick, src, mode, text }) {
   console.log(onClick);
-  const [activeBtn, setActiveBtn] = useState(null);
+//   const [activeBtn, setActiveBtn] = useState(null);
  // return (
     // <button
     //   onClick={handleUserClick}

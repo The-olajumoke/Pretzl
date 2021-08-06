@@ -5,13 +5,19 @@ function Footer() {
   return (
     <div className="bg-inputField py-5 px-10 flex flex-col justify-between  w-11/12 h-auto">
       <ul className=" flex flex-col text-center sm:flex-row w-full sm:w-2/5 mb-3 justify-between text-textBody">
+        {/* <li className="mb-2 sm:mb-0">
+          <NavLink activeClassName="activeLink" to="/about">
+            ABOUT
+          </NavLink>
+        </li> */}
         <li className="mb-2 sm:mb-0">
           <NavLink activeClassName="activeLink" to="/about">
             ABOUT
           </NavLink>
         </li>
         <li className="mb-2 sm:mb-0">
-          <NavLink activeClassName="activeLink" to="/product">
+          <NavLink activeClassName="activeLink" 
+          to="/">
             PRODUCT
           </NavLink>
         </li>
