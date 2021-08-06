@@ -7,6 +7,7 @@ function Header() {
   const [loginModal, setLoginModal] = useState(false);
   const openUserModal = () => {
     setUserModal((prev) => !prev);
+    console.log(userModal)
   };
   const openLoginModal = () => {
     setLoginModal((prev) => !prev);
