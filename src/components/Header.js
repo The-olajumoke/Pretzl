@@ -14,8 +14,8 @@ function Header() {
   return (
     <>
       <div className="flex justify-between items-center my-6  sm:w-11/12 sm:p-2 sm:pr-8 ">
-        <div className="flex justify-start w-1/3 border sm:w-1/2">
-          <img className="w-11/12 sm:w-1/3 " src={img} alt="logo" />
+        <div className="flex justify-start items-center w-1/3 sm:w-1/2">
+          <img className="w-11/12 h-1/2 sm:w-1/3 " src={img} alt="logo" />
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3  justify-around w-2/3 sm:flex  sm:w-1/2 items-center  sm:justify-end sm:p-5 ">
           <button
