@@ -25,9 +25,10 @@ export const ChooseUser = ({ showModal, setShowModal }) => {
         >
           {
             <div className="flex flex-col justify-around bg-white col-span-3 w-full   rounded-r-3xl  shadow-2xl p-0 sm:p-20">
+              
               <MdClose
                 onClick={() => setShowModal((prev) => !prev)}
-                className="text-black absolute right-5 top-3 ms:right-10 ms:top-10 cursor-pointer  h-8 w-8"
+                className="hidden sm:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
               />
               <h3 className=" font-normal sm:font-semibold text-black text-lg pl-3 sm:text-3xl">
                 Join Discussion!

@@ -18,7 +18,7 @@ export const SignUp = ({ showModal, setShowModal }) => {
           <div className="border flex flex-col justify-around  col-span-3 w-full border-secondary rounded-none sm:rounded-r-3xl  shadow-2xl  sm:p-20">
             <MdClose
               onClick={() => setShowModal((prev) => !prev)}
-              className="text-black absolute right-5 top-3 ms:right-10 ms:top-10 cursor-pointer  h-8 w-8"
+              className=" text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
             />
             <h3 className="font-semibold text-black text-sm sm:text-3xl">
               Join Discussion!

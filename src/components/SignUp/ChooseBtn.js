@@ -8,10 +8,10 @@ function ChooseBtn({ onClick, src, mode, text }) {
     <div
       onClick={onClick}
       id="user"
-      className="my-5 bg-inputField rounded-lg grid grid-cols-5 items-center cursor-pointer  text-black h-28 shadow-lg hover:bg-secondary"
+      className="my-5 bg-inputField rounded-lg grid grid-cols-5 items-center cursor-pointer  text-black h-28  hover:bg-secondary"
     >
       <div className="  flex justify-center">
-        <img src={src} alt="" className=" " />
+        <img src={src} alt="" className="w-1/2 sm:w-auto " />
       </div>
       <div className="  col-span-3">
         <h3 className=" font-black">{mode}</h3>
