@@ -5,3 +5,18 @@
 .activeLink {
   color: black;
 }
+.content{
+  width: 1080px;
+}
+
+
+  @media (max-width: 640px) { 
+    .content{
+      width:100%;
+    }
+   }
+
+ .mockup{
+   width: 600px;
+   height: 589px;
+ }  

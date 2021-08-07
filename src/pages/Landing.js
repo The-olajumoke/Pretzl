@@ -9,9 +9,9 @@ const Landing = () => {
     setValue(e.target.value);
   };
   return (
-    <div className=" h-auto sm:h-screen w-full flex flex-col items-center justify-between p-0 sm:p-2 ">
+    <div className="h-auto sm:h-screen w-full flex flex-col items-center justify-between ">
       <Header />
-      <div className="h-2/3 mt-4 p-0  px-0 sm:pl-6 flex flex-col sm:flex-row items-center justify-between w-11/12">
+      <div className=" mt-4 p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center justify-between w-11/12 sm:w-full">
         <div className="sm:w-1/2 p-0 sm:px-4 ">
           <div className="w-full sm:w-2/3 mb-4">
             <h1 className="font-semibold sm:font-medium leading-relaxed mb-8 sm:mb-3  text-4xl">
@@ -46,12 +46,14 @@ const Landing = () => {
         </div>
         <div className="flex justify-evenly  items-center w-full  h-96 sm:w-1/2 sm:h-full overflow-hidden sm:overscroll-none">
           <img
-            style={{ height: "90%" }}
-            className="h-full transform translate-x-32 sm:transform-none  w-full"
+            // style={{ height: "90%" }}
+            className=" mockup transform translate-x-32 sm:transform-none "
             src={img}
+            draggable="false"
             alt=""
           />
         </div>
+    
       </div>
       <Footer />
     </div>

@@ -15,6 +15,8 @@ module.exports = {
       inputField: "#F0F0F0",
       textBody: "#686868",
       black: "#000000",
+      button: "#F0f0f0",
+      gray: "#C1C1C1",
     },
     fontFamily: {
       poppins: "Poppins",

@@ -37,9 +37,9 @@ const LogIn = ({ showModal, setShowModal }) => {
                 name="username"
               />
               {/* button */}
-              <button className=" bg-secondary w-full border p-3 rounded-full  text-lg flex justify-center px-10 items-center">
+              <button className="mt-20 bg-button w-full  p-3 rounded-full text-gray  text-lg flex justify-center px-10 items-center hover:bg-secondary hover:text-white">
                 Log In
-                <FiArrowRight className="mx-3 h-6 w-6 justify-center items-center text-white" />
+              
               </button>
             </div>
           </div>
