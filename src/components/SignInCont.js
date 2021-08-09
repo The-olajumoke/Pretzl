@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../Exports/Group 1364.png";
 import { MdClose } from "react-icons/md";
-
+import {FaGripfire} from "react-icons/fa" 
 function SignInCont({ children, title, largeText, extraText,showModal, setShowModal }) {
   return (
     <div
@@ -9,7 +9,7 @@ function SignInCont({ children, title, largeText, extraText,showModal, setShowMo
       className=" bg-white sm:bg-opacity-80 pt-8 sm:pt-2 p-3 w-full h-full bottom-0 left-0 top-0 fixed flex flex-col justify-center items-center z-50"
     >
       <div className=" content relative  border-white h-full sm:h-4/5  text-white flex flex-col lg:grid gap-0 sm:grid-cols-5">
-        <div className="lg:hidden flex  text-secondary h-auto items-center justify-between mb-10 text-xl p-2  ">
+        <div className="lg:hidden flex  text-primary h-auto items-center justify-between mb-10 text-xl p-2  ">
           <h1>{title}</h1>
           <MdClose
             onClick={() => setShowModal((prev) => !prev)}
@@ -33,6 +33,10 @@ function SignInCont({ children, title, largeText, extraText,showModal, setShowMo
             src={img}
             alt="pretzl-logo"
           />
+          {/* <FaGripfire
+            className="right-0 sm:right-none absolute bottom-0 w-full sm:w-auto"
+          /> */}
+
         </div>
         {/* CONTENT */}
         {children}

@@ -11,7 +11,7 @@ const LogIn = ({ showModal, setShowModal }) => {
       {showModal ? (
         <LogFormat
           title="Log In"
-          largeText="Welcome to Pretzl."
+          largeText="Welcome to Fuego."
           extraText="Create an account to gain full access to our features."
           showModal={showModal}
           setShowModal={setShowModal}

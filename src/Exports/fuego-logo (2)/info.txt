@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Kingthings_Exeter
+font link: http://www.kingthingsfonts.co.uk/fonts/fonts.htm
+font author: Kingthings
+font author site: http://www.kingthingsfonts.co.uk/
+
+
+icon designer: Evan MacDonald
+icon designer link: /evanmacdonald
+        
+
+fontColor: {"hex":"#663399"}
+bgColor: {"gradient-0":"#FFFFFF","gradient-1":"#FFFFFF"}
+iconColor: {"hex":"#663399"}
+
+      

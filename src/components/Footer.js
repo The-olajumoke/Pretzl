@@ -33,7 +33,7 @@ function Footer() {
         </li>
       </ul>
       <div className="flex flex-col text-center sm:flex-row justify-between text-sm text-textBody">
-        <span cla>Copyright 2021 Pretzl LLC.</span>
+        <span cla>Copyright 2021 Fuego LLC.</span>
         <span>Privacy Policy | Terms of Use</span>
       </div>
     </div>
