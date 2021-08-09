@@ -11,10 +11,10 @@ const Landing = () => {
   return (
     <div className="h-auto sm:h-screen w-full flex flex-col items-center justify-between ">
       <Header />
-      <div className=" mt-4 p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center justify-between w-11/12 sm:w-full">
+      <div className=" mt-4 p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center justify-between w-11/12  sm:w-full">
         <div className="sm:w-1/2 p-0 sm:px-4 ">
-          <div className="w-full sm:w-2/3 mb-4">
-            <h1 className="font-semibold sm:font-medium leading-relaxed mb-8 sm:mb-3  text-4xl">
+          <div className="w-full sm:w-11/12  lg:w-2/3 mb-4">
+            <h1 className="font-semibold sm:font-medium leading-relaxed mb-8 sm:mb-3    text-4xl">
               Easy to use discussion media. Seamless and Interactive.
             </h1>
             <h4 className="text-lg leading-10 sm:leading-8 font-medium sm:font-normal text-textBody">
@@ -22,9 +22,9 @@ const Landing = () => {
               different ways.
             </h4>
           </div>
-          <div className="w-full flex flex-col mb-7 sm:flex-row sm:mb-0 ">
-            <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4 w-full justify-between sm:w-9/12 pl-0 p-2 items-center">
-              <button className="border flex items-center text-center border-border bg-secondary p-3 rounded-full mb-5 text-white w-4/6 sm:w-auto sm:mb-0 ">
+          <div className="w-full flex flex-col mb-7  sm:flex-row sm:mb-0 ">
+            <div className="grid grid-cols-1 xl:grid-cols-2 sm:gap-4 w-full justify-between sm:w-9/12 pl-0 p-2 items-center">
+              <button className="border flex items-center text-center border-border bg-secondary p-3 rounded-full mb-5 text-white  w-4/6  sm:w-auto sm:mb-0 ">
                 <FiMessageSquare className="text-lg mr-2" />
                 Create discussion
               </button>
@@ -53,7 +53,6 @@ const Landing = () => {
             alt=""
           />
         </div>
-    
       </div>
       <Footer />
     </div>

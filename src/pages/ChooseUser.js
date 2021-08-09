@@ -28,7 +28,7 @@ export const ChooseUser = ({ showModal, setShowModal }) => {
               
               <MdClose
                 onClick={() => setShowModal((prev) => !prev)}
-                className="hidden sm:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
+                className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
               />
               <h3 className=" font-normal sm:font-semibold text-black text-lg pl-3 sm:text-3xl">
                 Join Discussion!

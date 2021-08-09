@@ -12,10 +12,17 @@
 
   @media (max-width: 640px) { 
     .content{
+      /* width:100%; */
       width:100%;
     }
    }
 
+   @media (max-width: 1200px) { 
+    .content{
+      /* width:100%; */
+      width:90%;
+    }
+   }
  .mockup{
    width: 600px;
    height: 589px;
