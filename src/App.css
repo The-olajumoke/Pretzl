@@ -10,13 +10,13 @@
 }
 
 
-  @media (max-width: 640px) { 
+  /* @media (max-width: 640px) { 
     .content{
       /* width:100%; */
       width:100%;
     
     }
-   }
+   } */
 
    @media (max-width: 1200px) { 
     .content{

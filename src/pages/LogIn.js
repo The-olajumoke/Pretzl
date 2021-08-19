@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MdClose } from "react-icons/md";
-import { FiArrowRight } from "react-icons/fi";
+
 
 import LogFormat from "../components/SignInCont";
 import FormInput from "../components/SignUp/FormInput";

@@ -11,7 +11,7 @@ function Footer() {
           </NavLink>
         </li> */}
         <li className="mb-2 sm:mb-0">
-          <NavLink activeClassName="activeLink" to="/about">
+          <NavLink activeClassName="activeLink" to="/">
             ABOUT
           </NavLink>
         </li>
@@ -22,12 +22,12 @@ function Footer() {
           </NavLink>
         </li>
         <li className="mb-2 sm:mb-0">
-          <NavLink activeClassName="activeLink" to="/pricing">
+          <NavLink activeClassName="activeLink" to="/">
             PRICING
           </NavLink>
         </li>
         <li className="mb-2 sm:mb-0">
-          <NavLink activeClassName="activeLink" to="/contact">
+          <NavLink activeClassName="activeLink" to="/">
             CONTACT
           </NavLink>
         </li>

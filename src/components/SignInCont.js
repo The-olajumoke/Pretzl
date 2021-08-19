@@ -28,14 +28,14 @@ function SignInCont({ children, title, largeText, extraText,showModal, setShowMo
             {extraText ? <h5 className="text-md">{extraText}</h5> : ""}
           </div>
 
-          <img
+          {/* <img
             className="right-0 sm:right-none absolute bottom-0 w-2/6 sm:w-auto"
             src={img}
             alt="pretzl-logo"
-          />
-          {/* <FaGripfire
-            className="right-0 sm:right-none absolute bottom-0 w-full sm:w-auto"
           /> */}
+          <FaGripfire
+            className=" w-screen right-0 sm:right-none absolute bottom-0  sm:w-auto"
+          />
 
         </div>
         {/* CONTENT */}

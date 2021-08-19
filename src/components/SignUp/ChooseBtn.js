@@ -8,7 +8,7 @@ function ChooseBtn({ onClick, src, mode, text }) {
     <div
       onClick={onClick}
       id="user"
-      className="my-5 bg-inputField rounded-lg grid grid-cols-5 items-center cursor-pointer  text-black h-28  hover:bg-secondary"
+      className="my-5 bg-inputField rounded-lg grid grid-cols-5 items-center cursor-pointer  text-black h-28  hover:bg-primary"
     >
       <div className="  flex justify-center">
         <img src={src} alt="" className="w-1/2 sm:w-auto " />
@@ -19,7 +19,7 @@ function ChooseBtn({ onClick, src, mode, text }) {
       </div>
 
       <div className=" flex justify-center">
-        <FiArrowRight className="h-6 w-6 justify-center items-center text-secondary" />
+        <FiArrowRight className="h-6 w-6 justify-center items-center   text-gray" />
       </div>
     </div>
   );

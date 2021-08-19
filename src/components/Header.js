@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../Exports/cover2.png";
-import { ChooseUser } from "../pages/ChooseUser";
 import LogIn from "../pages/LogIn";
+import { SignUp } from "../pages/SignUp";
 // import Logo from "../Exports/fuego-logo/profile.png"
 function Header() {
   const [userModal, setUserModal] = useState(false);
@@ -34,7 +34,7 @@ function Header() {
           </button>
         </div>
 
-        <ChooseUser showModal={userModal} setShowModal={setUserModal} />
+        <SignUp showModal={userModal} setShowModal={setUserModal} />
         <LogIn showModal={loginModal} setShowModal={setLoginModal} />
       </div>
     </>

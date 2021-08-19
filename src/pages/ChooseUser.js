@@ -8,7 +8,7 @@ import ChooseBtn from "../components/SignUp/ChooseBtn";
 
 export const ChooseUser = ({ showModal, setShowModal }) => {
   const [continueBtn, setContinueBtn] = useState(false);
-  const [activeBtn, setActiveBtn] = useState(null);
+ 
 
   const handleClick=()=>{
     setContinueBtn(true);
