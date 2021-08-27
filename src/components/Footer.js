@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <div className="bg-inputField py-5 px-10 flex flex-col justify-between  w-full h-auto">
-      <ul className=" flex flex-col text-center  sm:flex-row w-full md:w-2/5 mb-3 justify-between text-textBody">
+      <ul className=" flex flex-col text-center  sm:flex-row w-full md:w-2/5 mb-3 justify-between text-textBody text-base">
         {/* <li className="mb-2 sm:mb-0">
           <NavLink activeClassName="activeLink" to="/about">
             ABOUT
@@ -33,7 +33,7 @@ function Footer() {
         </li>
       </ul>
       <div className="flex flex-col text-center sm:flex-row justify-between text-sm text-textBody">
-        <span cla>Copyright 2021 Fuego LLC.</span>
+        <span cla>Copyright 2021 Pretzl LLC.</span>
         <span>Privacy Policy | Terms of Use</span>
       </div>
     </div>

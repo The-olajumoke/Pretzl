@@ -6,12 +6,16 @@ module.exports = {
       zIndex: {
         "-10": "-10",
       },
+      fontSize: {
+        big: "52px",
+      },
     },
+    
     colors: {
-      primary: "#663399",
+      primary: "#07A098",
       secondary: "#1984FF",
       white: "#FFFFFF",
-      border: "#60A5FA",
+      border: "#0EB4F6",
       inputField: "#F0F0F0",
       textBody: "#686868",
       black: "#000000",
@@ -19,7 +23,7 @@ module.exports = {
       gray: "#C1C1C1",
     },
     fontFamily: {
-      poppins: "Poppins",
+      Poppins: "Poppins",
     },
   },
   variants: {

@@ -1,42 +1,43 @@
 import React from "react";
-import img from "../Exports/Group 1364.png";
 import { MdClose } from "react-icons/md";
-import {FaGripfire} from "react-icons/fa" 
-function SignInCont({ children, title, largeText, extraText,showModal, setShowModal }) {
+function SignInCont({
+  children,
+  title,
+  largeText,
+  extraText,
+  showModal,
+  setShowModal,
+}) {
   return (
-    <div
-      style={{ height: "100vh" }}
-      className=" bg-white sm:bg-opacity-80 pt-8 sm:pt-2 p-3 w-full h-full bottom-0 left-0 top-0 fixed flex flex-col justify-center items-center z-50"
-    >
-      <div className=" content relative  border-white h-full sm:h-4/5  text-white flex flex-col lg:grid gap-0 sm:grid-cols-5">
-        <div className="lg:hidden flex  text-primary h-auto items-center justify-between mb-10 text-xl p-2  ">
+    <div className="bg-white sm:bg-opacity-90  pt-8 sm:pt-2 p-3 h-auto w-full bottom-0 left-0 top-0 fixed flex flex-col justify-center items-center z-50 font-Poppins">
+      <div className="content relative  border-white h-auto lg:h-4/5  text-white flex flex-col lg:grid gap-0 sm:grid-cols-5 w-full">
+        {/* RESPONSIVE CLOSEBUTTON */}
+        <div className="lg:hidden flex  text-primary h-auto items-center justify-between mb-4 text-xl p-2  ">
           <h1>{title}</h1>
           <MdClose
             onClick={() => setShowModal((prev) => !prev)}
             className=" text-black cursor-pointer  h-8 w-8"
           />
         </div>
+        {/*//////// */}
 
-        <div className=" w-full bg-primary rounded-3xl mb-4 sm:mb-0 sm:rounded-l-3xl sm:rounded-none col-span-2 p-5  relative flex flex-col  items-center    h-1/3 sm:h-auto">
-          <div className=" h-3/4  flex flex-col justify-between p-7">
-            <h4 className="hidden sm:flex text-base sm:text-md sm:text-xl">
+        <div className=" bg-primary w-full rounded-3xl  mb-4 sm:mb-0 sm:rounded-l-3xl sm:rounded-r-3xl sm:rounded-none col-span-2 p-2 sm:p-5 sm:pr-10 relative flex flex-col  items-center  h-48 sm:h-80  lg:h-auto">
+          <div className=" w-full flex flex-col justify-between h-full text-left sm:h-full p-7 sm:py-4">
+            <h4 className="hidden flex-wrap lg:flex text-base sm:text-md sm:text-2xl">
               {title}
             </h4>
-            <h1 className=" text-3xl sm:text-6xl font-medium leading-relaxed">
-              {largeText}
-            </h1>
-            {extraText ? <h5 className="text-md">{extraText}</h5> : ""}
+
+            <div className="h-full flex flex-col justify-evenly">
+              <h1 className=" border border-black largeText flex sm:items-center  text-3xl md:text-5xl  lg:text-6xl w-full  font-medium">
+                {largeText}
+              </h1>
+              {extraText ? (
+                <h5 className=" leading-8 text-sm sm:text-xl ">{extraText}</h5>
+              ) : (
+                <h5 className=" text-primary"></h5>
+              )}
+            </div>
           </div>
-
-          {/* <img
-            className="right-0 sm:right-none absolute bottom-0 w-2/6 sm:w-auto"
-            src={img}
-            alt="pretzl-logo"
-          /> */}
-          <FaGripfire
-            className=" w-screen right-0 sm:right-none absolute bottom-0  sm:w-auto"
-          />
-
         </div>
         {/* CONTENT */}
         {children}
