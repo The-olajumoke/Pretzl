@@ -28,7 +28,7 @@ function SignInCont({
             </h4>
 
             <div className="h-full flex flex-col justify-evenly">
-              <h1 className=" border border-black largeText flex sm:items-center  text-3xl md:text-5xl  lg:text-6xl w-full  font-medium">
+              <h1 className=" largeText flex sm:items-center  text-3xl md:text-5xl  lg:text-6xl w-full  font-medium">
                 {largeText}
               </h1>
               {extraText ? (
