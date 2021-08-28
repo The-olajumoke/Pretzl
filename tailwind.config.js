@@ -8,6 +8,7 @@ module.exports = {
       },
       fontSize: {
         big: "52px",
+        signCont:"57px"
       },
     },
     
