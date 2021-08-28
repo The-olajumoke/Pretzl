@@ -22,6 +22,7 @@ module.exports = {
       black: "#000000",
       button: "#F0f0f0",
       gray: "#C1C1C1",
+      footer:"#FCFCFC"
     },
     fontFamily: {
       Poppins: "Poppins",

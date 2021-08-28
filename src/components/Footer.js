@@ -3,31 +3,33 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="bg-inputField py-5 px-10 flex flex-col justify-between  w-full h-auto">
-      <ul className=" flex flex-col text-center  sm:flex-row w-full md:w-2/5 mb-3 justify-between text-textBody text-base">
+    <div className="bg-footer py-5 px-10 flex flex-col justify-between  w-full h-auto leading-relaxed">
+      <ul className="flex flex-col text-center  sm:flex-row w-full md:w-2/5 mb-3 justify-between text-textBody text-base">
         {/* <li className="mb-2 sm:mb-0">
           <NavLink activeClassName="activeLink" to="/about">
             ABOUT
           </NavLink>
         </li> */}
-        <li className="mb-2 sm:mb-0">
-          <NavLink activeClassName="activeLink" to="/">
+        <li className=" mb-3 sm:mb-0">
+          <NavLink
+            className=""
+            to="/"
+          >
             ABOUT
           </NavLink>
         </li>
-        <li className="mb-2 sm:mb-0">
-          <NavLink activeClassName="activeLink" 
-          to="/">
+        <li className=" mb-3 sm:mb-0">
+          <NavLink  to="/">
             PRODUCT
           </NavLink>
         </li>
-        <li className="mb-2 sm:mb-0">
-          <NavLink activeClassName="activeLink" to="/">
+        <li className=" mb-3 sm:mb-0">
+          <NavLink  to="/">
             PRICING
           </NavLink>
         </li>
-        <li className="mb-2 sm:mb-0">
-          <NavLink activeClassName="activeLink" to="/">
+        <li className=" mb-3 sm:mb-0">
+          <NavLink  to="/">
             CONTACT
           </NavLink>
         </li>

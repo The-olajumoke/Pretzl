@@ -24,15 +24,15 @@ function Header() {
             alt="logo"
           />
         </div>
-        <div className="grid grid-cols-2   lg:grid-cols-3  justify-around w-2/3 sm:flex md:w-full  items-center  sm:justify-end sm:p-5">
+        <div className="flex   w-7/12  md:w-full  items-center  sm:justify-end sm:p-5">
           <button
-            className=" border-2 mx-1 md:mx-2 text-primary border-solid text-sm md:text-lg  border-border rounded-full  sm:px-12 py-1.5 hover:bg-border hover:text-white"
+            className=" border-2 mx-0.5 md:mx-2 w-3/4  sm:w-auto text-primary border-solid  text-sm md:text-lg  border-border rounded-full  sm:px-12 py-1.5 hover:bg-border hover:text-white"
             onClick={openUserModal}
           >
             Sign Up
           </button>
           <button
-            className=" border-2 mx-1 md:mx-2 text-primary border-solid text-sm md:text-lg border-border rounded-full sm:px-8 md:px-12 py-1.5 hover:bg-border hover:text-white "
+            className=" border-2 mx-1 md:mx-2 w-3/4  sm:w-auto text-primary border-solid text-sm md:text-lg border-border rounded-full sm:px-8 md:px-12 py-1.5 hover:bg-border hover:text-white "
             onClick={openLoginModal}
           >
             Log In

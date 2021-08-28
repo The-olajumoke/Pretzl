@@ -11,13 +11,11 @@
   
 }
 
-.button{
-left: 8.33%;
-right: 8.33%;
-top:0;
+.icon{
 height: 100%;
 bottom:0;
 font-size: 25px;
+margin-right: 5px;
 }
 
 .mockup {
@@ -42,8 +40,8 @@ font-size: 25px;
       width:100%;
     
     }
-.button{
-  font-size:20px;
+.icon{
+  font-size:23px;
 }
 
   }
@@ -55,7 +53,7 @@ font-size: 25px;
   right: -110px;
 }
 
-    .button{
+    .icon{
   font-size:20px;
 }
 .largeText{
