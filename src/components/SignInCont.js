@@ -32,7 +32,7 @@ function SignInCont({
                 {largeText}
               </h1>
               {extraText ? (
-                <h5 className=" leading-8 text-sm sm:text-xl ">{extraText}</h5>
+                <h5 className=" leading-8 text-sm sm:text-xl">{extraText}</h5>
               ) : (
                 <h5 className=" text-primary"></h5>
               )}

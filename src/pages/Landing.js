@@ -15,7 +15,7 @@ const Landing = () => {
       <div className="p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center mt-5 sm:mt-0 justify-between w-11/12  sm:w-full">
         <div className="sm:w-1/2  p-0 sm:px-4 ">
           <div className=" w-full md:5/6 lg:w-4/5  mb-4">
-            <div className="font-semibold leading-loose text-3xl md:text-4xl md:leading-relaxed lg:text-big lg:leading-tight    mb-8 sm:mb-3">
+            <div className="font-semibold leading-loose text-3xl md:text-4xl md:leading-relaxed lg:text-big lg:leading-tight sm:font-medium  mb-8 sm:mb-3">
               <h1>Share ideas,</h1>
               <h1> discover meaning</h1>
             </div>
