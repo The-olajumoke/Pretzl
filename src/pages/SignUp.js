@@ -45,7 +45,7 @@ export const SignUp = ({ showModal, setShowModal }) => {
                   Icon={<FiArrowRight />}
                 />
                 {/* <button
-                    className=" bg-secondary w-full border p-3 rounded-full  text-lg flex justify-center px-10 items-center"
+                    className=" bg-primary w-full border p-3 rounded-full  text-lg flex justify-center px-10 items-center"
                     onClick={() => {}}
                   >
                     

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import landingImg from "../Exports/landingimg.svg";
+import landingimg from "../Exports/landingimg.svg";
 import landingCircle from "../Exports/landingcircle.svg";
 import { FiMessageSquare } from "react-icons/fi";
 const Landing = () => {
@@ -26,7 +26,7 @@ const Landing = () => {
           </div>
           <div className=" w-full lg:w-11/12 mt-12 flex flex-col mb-7 justify-between  xl:flex-row sm:mb-0 ">
             <div className=" w-2/3 md:w-5/6 xl:w-2/5 pl-0 pr-0 xl:pr-2 items-center">
-              <button className=" relative flex items-center   justify-center  text-center border-primary  bg-primary p-3 rounded-full mb-5 text-white w-full sm:mb-0 md:text-base lg:text-xl xl:text-lg mr-0 ">
+              <button className=" relative flex items-center   justify-center  text-center border-primary  bg-primary p-3 rounded-full mb-5 text-white w-full sm:mb-0  xs:text-sm sm:text-sm md:text-base lg:text-xl xl:text-lg mr-0 ">
                 <FiMessageSquare className="icon" />
                 Create discussion
               </button>
@@ -55,9 +55,8 @@ const Landing = () => {
             alt=""
           />
           <img
-            // style={{ height: "90%" }}
             className="mockup "
-            src={landingImg}
+            src={landingimg}
             draggable="false"
             alt=""
           />

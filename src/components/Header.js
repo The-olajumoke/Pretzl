@@ -4,15 +4,21 @@ import { ChooseUser } from "../pages/ChooseUser";
 import LogIn from "../pages/LogIn";
 // import { SignUp } from "../pages/SignUp";
 import Logo from "../Exports/logo.svg"
+import Modal from "../pages/Modal";
 function Header() {
   const [userModal, setUserModal] = useState(false);
   const [loginModal, setLoginModal] = useState(false);
+  
+  const [activeModal, setActiveModal] = useState(false);
   const openUserModal = () => {
     setUserModal((prev) => !prev);
     console.log(userModal)
   };
   const openLoginModal = () => {
     setLoginModal((prev) => !prev);
+  };
+  const handleActiveModal = (e) => {
+    setActiveModal(e.target.name)
   };
   return (
     <>
@@ -26,22 +32,29 @@ function Header() {
         </div>
         <div className="flex h-full sm:h-auto w-70 md:w-full  items-center justify-end  sm:justify-end sm:p-5">
           <button
+            name="signUp"
             className=" border-2 mr-4 md:mx-2  w-35 sm:w-auto text-primary border-solid  text-base  md:text-lg  border-border rounded-full px-2 sm:px-12 py-2 hover:bg-border hover:text-white"
-            onClick={openUserModal}
+            // onClick={openUserModal}
+            onClick={handleActiveModal}
           >
             Sign up
           </button>
           <button
+            name="logIn"
             className=" border-2  mr-4  md:mx-2 w-35  sm:w-auto text-primary border-solid  text-base md:text-lg border-border sm:rounded-full rounded-3xl sm:px-8 md:px-12 py-2 hover:bg-border hover:text-white "
-            onClick={openLoginModal}
+            // onClick={openLoginModal}
+            onClick={handleActiveModal}
           >
             Log in
           </button>
         </div>
 
         {/* <SignUp showModal={userModal} setShowModal={setUserModal} /> */}
-        <ChooseUser showModal={userModal} setShowModal={setUserModal} />
-        <LogIn showModal={loginModal} setShowModal={setLoginModal} />
+        {/* <ChooseUser showModal={userModal} setShowModal={setUserModal} /> */}
+{/* 
+        <LogIn showModal={loginModal} setShowModal={setLoginModal} /> */}
+
+        <Modal activeModal={activeModal} setactiveModal={setActiveModal} />
       </div>
     </>
   );
