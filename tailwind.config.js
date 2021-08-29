@@ -8,8 +8,13 @@ module.exports = {
       },
       fontSize: {
         big: "52px",
-        signCont:"57px"
+        signCont:"49px"
       },
+      width:{
+        "30":"30%",
+        "70":"70%",
+        "35":"35%"
+      }
     },
     
     colors: {

@@ -12,20 +12,20 @@ const Landing = () => {
   return (
     <div className=" h-auto sm:h-screen font-Poppins w-full flex flex-col items-center justify-between">
       <Header />
-      <div className="p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center mt-8 sm:mt-0 justify-between w-11/12  sm:w-full">
+      <div className=" p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center mt-8 sm:mt-0 justify-between w-11/12  sm:w-full">
         <div className="sm:w-1/2  p-0 sm:px-4 ">
           <div className=" w-full md:5/6 lg:w-4/5  mb-4">
-            <div className="font-semibold leading-relaxed text-3xl md:text-4xl md:leading-relaxed lg:text-4xl xl:text-big lg:leading-tight sm:font-medium  mb-4 sm:mb-3">
+            <div className=" font-semibold leading-relaxed text-3xl md:text-4xl md:leading-relaxed lg:text-4xl xl:text-big lg:leading-tight sm:font-medium  mb-4 sm:mb-3">
               <h1>Share ideas,</h1>
               <h1> discover meaning.</h1>
             </div>
-            <h4 className="w-4/5 md:5/6 text-md md:text-base leading-relaxed sm:leading-8 font-medium sm:font-normal text-textBody ">
+            <h4 className="lg:pl-0.5 w-4/5 md:5/6 text-md md:text-base leading-relaxed sm:leading-8 font-medium sm:font-normal text-textBody ">
               Education, presentations, collaboration. Now, you can interact
               easily and seamlessly.
             </h4>
           </div>
-          <div className="w-full p-2 lg:w-11/12 mt-12 flex flex-col mb-7  xl:flex-row sm:mb-0 ">
-            <div className="  justify-between  w-2/3 md:w-5/6 xl:w-2/5 pl-0 pr-0 xl:p-2 items-center">
+          <div className=" w-full lg:w-11/12 mt-12 flex flex-col mb-7 justify-between  xl:flex-row sm:mb-0 ">
+            <div className=" w-2/3 md:w-5/6 xl:w-2/5 pl-0 pr-0 xl:pr-2 items-center">
               <button className=" relative flex items-center   justify-center  text-center border-primary  bg-primary p-3 rounded-full mb-5 text-white w-full sm:mb-0 md:text-base lg:text-xl xl:text-lg mr-0 ">
                 <FiMessageSquare className="icon" />
                 Create discussion
@@ -36,8 +36,8 @@ const Landing = () => {
                 type="text"
                 value={value}
                 onChange={handleKey}
-                className="border-2 border-border p-3 rounded-full outline-none  md:text-base lg:text-xl xl:text-lg   w-2/3  md:w-10/12  xl:w-3/4"
-                placeholder="Enter Inso link"
+                className="border-2 border-border p-3 px-6  rounded-full outline-none  md:text-base lg:text-xl xl:text-lg   w-2/3  md:w-10/12  xl:w-3/4"
+                placeholder="Enter Inso code"
               />
               {value.length > 0 && (
                 <button className="text-center p-3 text-xl sm:text-xl text-textBody font-medium mr-4 md:mr-0 lg-mr-4">
