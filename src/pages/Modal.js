@@ -33,7 +33,7 @@ function Modal({ activeModal, setactiveModal }) {
           setactiveModal={setactiveModal}
         >
           {
-            <div className=" bg-white  flex flex-col justify-between items-center col-span-3 w-full h-full sm:h-auto   rounded-r-none sm:rounded-r-3xl  shadow-2xl  p-0  sm:p-12 ">
+            <div className=" bg-white  flex flex-col justify-between items-center col-span-3 w-full   rounded-r-none sm:rounded-r-3xl  sm:shadow-2xl  p-0  sm:p-12 ">
               <MdClose
                 onClick={() => setactiveModal(false)}
                 className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
@@ -153,7 +153,7 @@ function Modal({ activeModal, setactiveModal }) {
           extraText="Create an account to gain full access to our features."
           setactiveModal={setactiveModal}
         >
-          <div className=" my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl  shadow-2xl p-0 sm:p-20 sm:pb-12">
+          <div className=" my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl  sm:shadow-2xl p-0 sm:p-20 sm:pb-12">
             <MdClose
               onClick={() => setactiveModal(false)}
               className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
@@ -180,7 +180,7 @@ function Modal({ activeModal, setactiveModal }) {
               {/* button */}
               <div className="">
                 <button
-                  className={`mt-10 sm:mt-12 w-full  p-3 rounded-full ${
+                  className={`mt-10 sm:mt-12 w-full  p-3 rounded-full    ${
                     loginBtn ? "bg-border" : "bg-inputField"
                   } 
                 
