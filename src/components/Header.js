@@ -20,6 +20,7 @@ function Header() {
   const handleActiveModal = (e) => {
     setActiveModal(e.target.name)
   };
+  
   return (
     <>
       <div className="flex justify-between items-center my-6 h-20 sm:h-auto  w-full p-0 sm:p-2 sm:px-8 md:pr-0 ">
@@ -33,7 +34,7 @@ function Header() {
         <div className="flex h-full sm:h-auto w-70 md:w-full  items-center justify-end  sm:justify-end sm:p-5">
           <button
             name="signUp"
-            className=" border-2 mr-4 md:mx-2  w-35 sm:w-auto text-primary border-solid  text-base  md:text-lg  border-border rounded-full px-2 sm:px-12 py-2 hover:bg-border hover:text-white"
+            className=" border-2 mr-4 md:mx-2  w-35 sm:w-auto text-primary border-solid  text-base  md:text-lg  border-border rounded-full px-1 sm:px-12 py-1 hover:bg-border hover:text-white"
             // onClick={openUserModal}
             onClick={handleActiveModal}
           >
@@ -41,7 +42,7 @@ function Header() {
           </button>
           <button
             name="logIn"
-            className=" border-2  mr-4  md:mx-2 w-35  sm:w-auto text-primary border-solid  text-base md:text-lg border-border sm:rounded-full rounded-3xl sm:px-8 md:px-12 py-2 hover:bg-border hover:text-white "
+            className=" border-2  mr-4  md:mx-2 w-35  sm:w-auto text-primary border-solid  text-base md:text-lg border-border sm:rounded-full px-1 rounded-3xl sm:px-8 md:px-12 py-1 hover:bg-border hover:text-white "
             // onClick={openLoginModal}
             onClick={handleActiveModal}
           >
@@ -49,10 +50,7 @@ function Header() {
           </button>
         </div>
 
-        {/* <SignUp showModal={userModal} setShowModal={setUserModal} /> */}
-        {/* <ChooseUser showModal={userModal} setShowModal={setUserModal} /> */}
-{/* 
-        <LogIn showModal={loginModal} setShowModal={setLoginModal} /> */}
+        
 
         <Modal activeModal={activeModal} setactiveModal={setActiveModal} />
       </div>

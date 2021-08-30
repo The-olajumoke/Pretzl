@@ -10,10 +10,10 @@ const Landing = () => {
     setValue(e.target.value);
   };
   return (
-    <div className=" h-auto sm:h-screen font-Poppins w-full flex flex-col items-center justify-between">
+    <div className=" h-auto sm:h-screen font-Poppins w-full p-0 flex flex-col items-center justify-between">
       <Header />
-      <div className=" p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center mt-8 sm:mt-0 justify-between w-11/12  sm:w-full">
-        <div className="sm:w-1/2  p-0 sm:px-4 ">
+      <div className=" p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center mt-8 sm:mt-0 justify-between  w-full  sm:w-full">
+        <div className="sm:w-1/2 w-11/12  p-0 sm:px-4 ">
           <div className=" w-full md:5/6 lg:w-4/5  mb-4">
             <div className=" font-semibold leading-relaxed text-3xl md:text-4xl md:leading-relaxed lg:text-4xl xl:text-big lg:leading-tight sm:font-medium  mb-4 sm:mb-3">
               <h1>Share ideas,</h1>
@@ -47,7 +47,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className=" mockupCont relative flex justify-evenly items-center w-full  h-96  lg:w-1/2 sm:w-2/5  sm:h-full overflow-hidden sm:overscroll-none">
+        <div className=" mockupCont relative flex justify-evenly items-center w-full m-0 mr-0  h-96  lg:w-1/2 sm:w-2/5  sm:h-full overflow-hidden sm:overscroll-none">
           <img
             className=" circle transform translate-x-24 sm:translate-x-0  sm:ml-9"
             style={{ height: "600px", width: "600px" }}
