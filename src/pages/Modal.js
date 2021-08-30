@@ -181,7 +181,7 @@ function Modal({ activeModal, setactiveModal }) {
               <div className="">
                 <button
                   className={`mt-10 sm:mt-12 w-full  p-3 rounded-full ${
-                    loginBtn ? "bg-primary" : "bg-inputField"
+                    loginBtn ? "bg-secondary" : "bg-inputField"
                   } 
                 
                  ${loginBtn ? "text-white" : " text-btnText"}
