@@ -22,9 +22,7 @@ function Modal({ activeModal, setactiveModal }) {
     setGuest(true);
     setContinueBtn(true);
   };
-const onInput = () => {
-    setLoginBtn((prev)=>!prev);
-};
+
   return (
     <div>
       {/* CHOOSEUSER */}
@@ -153,12 +151,10 @@ const onInput = () => {
           title="Log In"
           largeText="Welcome to Inso."
           extraText="Create an account to gain full access to our features."
-         
           setactiveModal={setactiveModal}
         >
           <div className=" my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl  shadow-2xl p-0 sm:p-20 sm:pb-12">
             <MdClose
-          
               onClick={() => setactiveModal(false)}
               className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
             />
@@ -171,8 +167,8 @@ const onInput = () => {
                   placeholder="Enter email..."
                   type="email"
                   name="email"
-                //   onInpu
-
+                  loginBtn={loginBtn}
+                  setLoginBtn={setLoginBtn}
                 />
                 <FormInput
                   label="Username"
@@ -183,7 +179,14 @@ const onInput = () => {
               </div>
               {/* button */}
               <div className="">
-                <button className={`mt-10 sm:mt-12 w-full  p-3 rounded-full ${loginBtn?"bg-primary":"bg-inputField"} text-btnText  text-xl flex justify-center px-10 items-center hover:text-white`}>
+                <button
+                  className={`mt-10 sm:mt-12 w-full  p-3 rounded-full ${
+                    loginBtn ? "bg-primary" : "bg-inputField"
+                  } 
+                
+                 ${loginBtn ? "text-white" : " text-btnText"}
+                 text-xl flex justify-center px-10 items-center hover:text-white`}
+                >
                   Log In
                 </button>
                 <h3 className=" text-base text-textBody text-center my-4">
