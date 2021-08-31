@@ -26,7 +26,7 @@ const Landing = () => {
           </div>
           <div className=" w-full lg:w-11/12 mt-12 flex flex-col mb-7 justify-between  xl:flex-row sm:mb-0 ">
             <div className=" w-2/3 md:w-5/6 xl:w-2/5 pl-0 pr-0 xl:pr-2 items-center">
-              <button className=" relative flex items-center   justify-center  text-center border-primary  bg-primary p-3 rounded-full mb-5 text-white w-full sm:mb-0  xs:text-sm sm:text-sm md:text-base lg:text-lg xl:text-lg mr-0 ">
+              <button className=" relative flex items-center   justify-center  text-center border-primary  bg-primary p-3 rounded-full mb-5 text-white w-full sm:mb-0 text-sm sm:text-sm md:text-base lg:text-lg xl:text-lg mr-0 ">
                 <FiMessageSquare className="icon" />
                 Create discussion
               </button>
