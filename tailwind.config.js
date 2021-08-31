@@ -7,14 +7,21 @@ module.exports = {
         "-10": "-10",
       },
       fontSize: {
-        big: "52px",
+        bigger:"65px",
+        big: "50px",
         signCont: "49px",
+        17:"17px",
       },
       width: {
         30: "30%",
         70: "70%",
         35: "35%",
+        1080: "1080px",
       },
+       screens:{
+         "desktop": '1280px',
+         "extralarge":'1920px'
+       },
     },
 
     colors: {
@@ -28,7 +35,7 @@ module.exports = {
       boldtext: "011B25",
       desc: "#9D9D9D",
       footer: "#FCFCFC",
-      btnText:"#C1C1C1"
+      btnText: "#C1C1C1",
     },
     fontFamily: {
       Poppins: "Poppins",

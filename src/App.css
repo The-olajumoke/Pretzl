@@ -6,7 +6,6 @@
   color: black;
 }
 .content {
-  width: 1080px;
   padding: 10px;
   
 }
@@ -25,9 +24,7 @@ margin-right: 5px;
   right: -120px;
 
 }
-.circle{
-  height: 660px;
-}
+
 .largeText{
   line-height: 72px;
 }
@@ -36,10 +33,7 @@ margin-right: 5px;
 .mockup{
   right: -50px;
 }
-.content{
-      width:100%;
-    
-    }
+
 .icon{
   font-size:23px;
 }
@@ -61,5 +55,14 @@ margin-right: 5px;
 .largeText{
   line-height: 50px;
 }
+.circle{
+  height: 500px;
+}
 }
 
+@media (min-width:1920px) {
+  .mockup{
+  right: 0px;
+
+  }
+}

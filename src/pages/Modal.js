@@ -24,7 +24,7 @@ function Modal({ activeModal, setactiveModal }) {
   };
 
   return (
-    <div>
+    <div >
       {/* CHOOSEUSER */}
       {activeModal === "signUp" ? (
         <SignInCont
