@@ -20,8 +20,7 @@ const Landing = () => {
               <h1> discover meaning.</h1>
             </div>
             <h4 className="lg:pl-0.5 w-4/5 md:5/6 text-md md:text-base leading-relaxed sm:leading-8 font-medium sm:font-normal text-textBody ">
-              Education, presentations, collaboration. Now, you can interact
-              easily and seamlessly.
+              Education, presentations, collaboration. Engage, interact, and create ideas together.
             </h4>
           </div>
           <div className=" w-full lg:w-11/12 mt-12 flex flex-col mb-7 justify-between  xl:flex-row sm:mb-0 ">
