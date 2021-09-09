@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import blueIcon from "../Exports/blueIcon.svg";
-import pinkIcon from "../Exports/pinkIcon.svg";
 import { MdClose } from "react-icons/md";
 import { FiArrowRight } from "react-icons/fi";
 import SignInCont from "../components/SignInCont";
 import FormInput from "../components/SignUp/FormInput";
 import Button from "../components/SignUp/Button";
-export const SignUp = ({ showModal, setShowModal }) => {
+ const SignUp = ({ showModal, setShowModal }) => {
   const [continueBtn, setContinueBtn] = useState(false);
 
   const handleClick = () => {
@@ -14,7 +12,7 @@ export const SignUp = ({ showModal, setShowModal }) => {
   };
   return (
     <>
-      {showModal ? (
+      {/* {showModal ? ( */}
         <SignInCont
           title="Sign Up"
           largeText="How would you like to sign in?"
@@ -55,7 +53,8 @@ export const SignUp = ({ showModal, setShowModal }) => {
             </div>
           }
         </SignInCont>
-      ) : null}
+      {/* ) : null} */}
     </>
   );
 };
+export default SignUp
