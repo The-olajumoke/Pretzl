@@ -1,17 +1,23 @@
-import React from 'react'
+import { FiArrowRight } from "react-icons/fi";
 
+const Button = ({ children, ...props }) => {
+  const { disabled, onClick, mt, } = props;
+  // console.log(isValid);
+  // console.log(isValidating);
+  console.log(disabled);
 
-function Button({text,color,Icon,onClick}) {
-    // console.log(icon.type.name)
-    const iconTag =<Icon className="mx-3 h-6 w-6 justify-center items-center text-white" />
-    return (
-      <button
-        className= 'bg-primary w-full border p-3 rounded-full  text-lg flex justify-center px-10 items-center'
-      >
-{text}
-        {iconTag} 
-      </button>
-    );
-}
+  return (
+    <button
+      onClick={onClick}
+      className={`mt-10 ${mt? 'sm:mt-2':'sm:mt-12'}  w-full  p-3 rounded-full text-xl flex justify-center px-10 items-center hover:text-white ${disabled?"bg-inputField disabled:cursor-not-allowed":"bg-border"
+      }`}
+      type="submit"
+      disabled={disabled}
+    >
+      {children}
+      <FiArrowRight className="mx-3 h-6 w-6 justify-center items-center" />
+    </button>
+  );
+};
 
-export default Button
+export default Button;

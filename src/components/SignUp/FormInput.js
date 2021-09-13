@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 function FormInput({label,name,type,placeholder,loginBtn, setLoginBtn}) {
 const [value, setValue] = useState('')

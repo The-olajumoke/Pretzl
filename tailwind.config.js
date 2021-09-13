@@ -18,6 +18,9 @@ module.exports = {
         35: "35%",
         1080: "1080px",
       },
+      height: {
+        99: "99%",
+      },
       screens: {
         desktop: "1280px",
         extralarge: "1920px",
@@ -37,13 +40,20 @@ module.exports = {
       footer: "#FCFCFC",
       btnText: "#C1C1C1",
       red: "#FF0000",
+      placeholder: "#001E2F",
     },
     fontFamily: {
       Poppins: "Poppins",
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      colors: ["disabled"],
+      
+      cursor: ["disabled"],
+      appearance: ["hover", "focus"],
+      
+    },
   },
   plugins: [],
 };
