@@ -69,7 +69,7 @@ const handleSubmit =() =>{
                   <h3 className=" text-base text-textBody text-center my-4">
                     If you don't have an account,
                     <button
-                      onClick={() => setactiveModal("signUp1")}
+                      onClick={() => setactiveModal("chooseUser")}
                       className="text-primary"
                     >
                       Sign up
