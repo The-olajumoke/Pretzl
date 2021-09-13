@@ -45,7 +45,7 @@ setactiveModal(`${signModal}`)
       width="w-1/2"
     >
       {
-        <div className=" border border-btnText  bg-white  flex flex-col justify-between items-center col-span-3 w-fullh-full rounded-r-none sm:rounded-r-3xl  p-0  sm:p-12 ">
+        <div className=" border  sm:border-btnText  bg-white  flex flex-col justify-between items-center col-span-3 w-fullh-full rounded-r-none sm:rounded-r-3xl  p-0  sm:p-12 ">
           <MdClose
             onClick={() => setactiveModal(false)}
             className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"

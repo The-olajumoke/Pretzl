@@ -45,7 +45,7 @@ function LogInGuest({ activeModal, setactiveModal }) {
       extraText="Create an account to gain full access to our features."
       setactiveModal={setactiveModal}
     >
-      <div className=" border border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  sm:rounded-r-3xl  p-0 sm:p-20 sm:pb-12">
+      <div className=" border sm:border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  sm:rounded-r-3xl  p-0 sm:p-20 sm:pb-12">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
