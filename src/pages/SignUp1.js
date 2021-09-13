@@ -105,10 +105,10 @@ function SignUp1({ activeModal, setactiveModal }) {
                   <h3 className=" text-base text-textBody text-center my-4">
                     If you don't have an account,
                     <button
-                      onClick={() => setactiveModal("logInUser")}
+                      onClick={() => setactiveModal("logInGuest")}
                       className="text-primary"
                     >
-                      Sign up
+                      Log in
                     </button>
                   </h3>
                 </div>
