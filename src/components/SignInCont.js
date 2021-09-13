@@ -11,7 +11,7 @@ function SignInCont({
 }) {
   return (
     <div className="bg-white sm:bg-opacity-95   sm:pt-2 p-1 h-auto w-full bottom-0 left-0 top-0 fixed   flex flex-col justify-center items-center z-50 font-Poppins">
-      <div className="border content relative  border-white h-auto lg:h-4/5 overflow-y-scroll  lg:overflow-y-hidden text-white   w-full lg:w-1080 xl:w-2/3 desktop:h-5/6">
+      <div className="border content relative  border-white h-auto lg:h-4/5 overflow-y-scroll  lg:overflow-y-hidden text-white   w-full lg:w-1080 xl:w-2/3 desktop:h-5/6 ">
         {/* RESPONSIVE CLOSEBUTTON */}
         <div className="lg:hidden flex  text-primary h-auto items-center justify-between mb-4 text-xl p-2  ">
           <h1>{title}</h1>

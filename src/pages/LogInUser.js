@@ -25,7 +25,7 @@ const handleSubmit =() =>{
       extraText="Enter login details."
       setactiveModal={setactiveModal}
     >
-      <div className=" my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl  sm:shadow-2xl p-0 sm:p-20 sm:pb-12">
+      <div className="border border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl  p-0 sm:p-20 sm:pb-12">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
@@ -47,7 +47,7 @@ const handleSubmit =() =>{
                 .required("Required"),
             })}
           >
-            {({isSubmitting, isValid, dirty}) => (
+            {({ isSubmitting, isValid, dirty }) => (
               <Form>
                 <CustomField
                   label="Email address"
@@ -62,10 +62,8 @@ const handleSubmit =() =>{
                   name="password"
                 />
                 <div className="">
-                  <Button disabled={!(isValid && dirty)}>
-                    Log In
-                  </Button>
-                  
+                  <Button disabled={!(isValid && dirty)}>Log In</Button>
+
                   <h3 className=" text-base text-textBody text-center my-4">
                     If you don't have an account,
                     <button

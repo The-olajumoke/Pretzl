@@ -5,7 +5,7 @@ import FormErrorMessage from "./FormErrorMessage";
 export const CustomField = (props) => {
   const { name, label, req } = props;
   return (
-    <div className="border h-20 mb-5 sm:mb-5 flex flex-col">
+    <div className=" h-auto mb-5 sm:mb-5 flex flex-col">
       <label className="text-primary" htmlFor="name">
         {label}
         {req ? (

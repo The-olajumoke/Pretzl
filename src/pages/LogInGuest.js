@@ -45,7 +45,7 @@ function LogInGuest({ activeModal, setactiveModal }) {
       extraText="Create an account to gain full access to our features."
       setactiveModal={setactiveModal}
     >
-      <div className=" my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl  sm:shadow-2xl p-0 sm:p-20 sm:pb-12">
+      <div className=" border border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  sm:rounded-r-3xl  p-0 sm:p-20 sm:pb-12">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
@@ -66,7 +66,7 @@ function LogInGuest({ activeModal, setactiveModal }) {
                 .required("Required"),
             })}
           >
-            {(props) => (
+            {({ isSubmitting, isValid, isValidating, dirty }) => (
               <Form>
                 <CustomField
                   label="Email address"
@@ -77,23 +77,14 @@ function LogInGuest({ activeModal, setactiveModal }) {
                   // setLoginBtn={setLoginBtn}
                 />
                 <CustomField
-                  label="User Name"
+                  label="Username"
                   placeholder="Enter username..."
                   type="text"
                   name="username"
                 />
                 <div className="">
-                  
-                  <button
-                    className={`mt-10 sm:mt-12 w-full  p-3 rounded-full    ${
-                      loginBtn ? "bg-border" : "bg-inputField"
-                    } 
-                
-                 ${loginBtn ? "text-white" : " text-btnText"}
-                 text-xl flex justify-center px-10 items-center hover:text-white`}
-                  >
-                    Log In
-                  </button>
+                  <Button disabled={!(isValid && dirty)}>Log In</Button>
+
                   <h3 className=" text-base text-textBody text-center my-4">
                     If you don't have an account,
                     <button

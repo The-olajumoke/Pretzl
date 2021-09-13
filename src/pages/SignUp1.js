@@ -18,7 +18,6 @@ function SignUp1({ activeModal, setactiveModal }) {
     setTimeout(() => {
       // STORE VALUES SOMEWHERE
        
-      alert("submitting");
       resetForm();
       setSubmitting(false);
       setactiveModal("signUp2");
@@ -48,7 +47,7 @@ function SignUp1({ activeModal, setactiveModal }) {
       extraText="Sign up to all Inso features."
       setactiveModal={setactiveModal}
     >
-      <div className="my-2 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl  sm:shadow-2xl p-0 sm:px-20 sm:py-7 sm:pb-8">
+      <div className="border border-btnText my-2 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl   p-0 sm:px-20 sm:py-7 sm:pb-8">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
@@ -66,7 +65,7 @@ function SignUp1({ activeModal, setactiveModal }) {
             onSubmit={handleSubmit}
             isValid={false}
           >
-            {({ isSubmitting, isValid, isValidating,dirty }) => (
+            {({ isSubmitting, isValid, isValidating, dirty }) => (
               <Form className="  flex flex-col">
                 <CustomField
                   label="First Name"
@@ -95,12 +94,7 @@ function SignUp1({ activeModal, setactiveModal }) {
                 />
 
                 <div className="">
-                  <Button
-                    disabled={!(isValid &&dirty)}
-                  >
-                    Continue
-                  
-                  </Button>
+                  <Button disabled={!(isValid && dirty)}>Continue</Button>
 
                   <h3 className=" text-base text-textBody text-center my-4">
                     If you don't have an account,
