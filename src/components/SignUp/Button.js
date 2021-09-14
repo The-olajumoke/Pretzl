@@ -9,7 +9,12 @@ const Button = ({ children, ...props }) => {
   return (
     <button
       onClick={onClick}
-      className={`mt-10 ${mt? 'sm:mt-2':'sm:mt-12'}  w-full  p-3 rounded-full text-xl flex justify-center px-10 items-center ${disabled?"bg-inputField disabled:cursor-not-allowed":"bg-border"
+      className={` ${
+        mt ? "sm:mt-2" : "sm:mt-12"
+      } mb-2 w-full  p-3 rounded-full text-base sm:text-xl flex justify-center px-10 items-center ${
+        disabled
+          ? "bg-inputField disabled:cursor-not-allowed"
+          : "bg-border"
       }`}
       type="submit"
       disabled={disabled}

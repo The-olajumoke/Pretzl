@@ -45,13 +45,13 @@ function LogInGuest({ activeModal, setactiveModal }) {
       extraText="Create an account to gain full access to our features."
       setactiveModal={setactiveModal}
     >
-      <div className=" border sm:border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  sm:rounded-r-3xl  p-0 sm:p-20 sm:pb-12">
+      <div className=" border sm:border-btnText my-5 sm:my-0  flex flex-col justify-items-end bg-white col-span-3 w-full  rounded-r-3xl  p-0 sm:p-20 sm:pb-12">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
         />
 
-        <div className="h-auto sm:h-full flex flex-col justify-evenly p-2 sm:pt-5">
+        <div className="h-full sm:h-full flex flex-col justify-evenly p-2 sm:pt-5">
           <Formik
             initialValues={{
               email: "",
@@ -67,28 +67,30 @@ function LogInGuest({ activeModal, setactiveModal }) {
             })}
           >
             {({ isSubmitting, isValid, isValidating, dirty }) => (
-              <Form>
-                <CustomField
-                  label="Email address"
-                  placeholder="Enter email..."
-                  type="email"
-                  name="email"
-                  // loginBtn={loginBtn}
-                  // setLoginBtn={setLoginBtn}
-                />
-                <CustomField
-                  label="Username"
-                  placeholder="Enter username..."
-                  type="text"
-                  name="username"
-                />
-                <div className="">
+              <Form className="flex flex-col justify-evenly h-full ">
+                <div className="h-64 flex flex-col justify-end">
+                  <CustomField
+                    label="Email address"
+                    placeholder="Enter email..."
+                    type="email"
+                    name="email"
+                    // loginBtn={loginBtn}
+                    // setLoginBtn={setLoginBtn}
+                  />
+                  <CustomField
+                    label="Username"
+                    placeholder="Enter username..."
+                    type="text"
+                    name="username"
+                  />
+                </div>
+                <div className=" mt-6 sm:mt-0 h-2/6 flex flex-col justify-end">
                   <Button disabled={!(isValid && dirty)}>Log In</Button>
 
-                  <h3 className=" text-base text-textBody text-center my-4">
+                  <h3 className="text-sm sm:text-base text-textBody text-center my-4">
                     If you don't have an account,
                     <button
-                      onClick={() => setactiveModal("signUp")}
+                      onClick={() => setactiveModal("chooseUser")}
                       className="text-primary"
                     >
                       Sign up

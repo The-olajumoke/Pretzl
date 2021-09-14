@@ -13,18 +13,16 @@ function SignUp1({ activeModal, setactiveModal }) {
   const [loginBtn, setLoginBtn] = useState(false);
   const [chosenOption, setChosenOption] = useState(false);
 
-
-  const handleSubmit = (values, { setSubmitting, resetForm,}) => {
+  const handleSubmit = (values, { setSubmitting, resetForm }) => {
     setTimeout(() => {
       // STORE VALUES SOMEWHERE
-       
+
       resetForm();
       setSubmitting(false);
       setactiveModal("signUp2");
     }, 2000);
   };
-  const phoneRegExp =
-    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   const validationSchema = Yup.object({
     firstName: Yup.string()
       .min(3, "Must be at least 3 characters")
@@ -35,9 +33,7 @@ function SignUp1({ activeModal, setactiveModal }) {
     userName: Yup.string()
       .min(3, "Must be at least 3 characters")
       .required("Required"),
-    phoneNumber: Yup.string()
-      .matches(phoneRegExp, "Invalid phone number")
-      
+    phoneNumber: Yup.string().matches(phoneRegExp, "Invalid phone number"),
   });
 
   return (
@@ -47,13 +43,13 @@ function SignUp1({ activeModal, setactiveModal }) {
       extraText="Sign up to all Inso features."
       setactiveModal={setactiveModal}
     >
-      <div className="border sm:border-btnText my-2 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl   p-0 sm:px-20 sm:py-7 sm:pb-8">
+      <div className=" border sm:border-btnText my-2 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  sm:rounded-r-3xl px-0  p-0 sm:px-20 sm:py-7 sm:pb-4">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
         />
 
-        <div className="h-auto sm:h-full flex flex-col justify-evenly p-2 sm:pt-5">
+        <div className="h-auto sm:h-full flex flex-col justify-evenly sm:p-2 sm:pt-5">
           <Formik
             initialValues={{
               firstName: "",
@@ -66,34 +62,36 @@ function SignUp1({ activeModal, setactiveModal }) {
             isValid={false}
           >
             {({ isSubmitting, isValid, isValidating, dirty }) => (
-              <Form className="  flex flex-col">
-                <CustomField
-                  label="First Name"
-                  name="firstName"
-                  type="text "
-                  placeholder="Enter first name"
-                />
-                <CustomField
-                  label="Last Name"
-                  name="lastName"
-                  type="text"
-                  placeholder="Enter last name"
-                />
-                <CustomField
-                  label="Preferred Username"
-                  name="userName"
-                  type="text"
-                  placeholder="Enter username"
-                />
-                <CustomField
-                  label="Phone Number"
-                  name="phoneNumber"
-                  type="tel"
-                  placeholder="Enter phone number"
-                  req="(optional)"
-                />
-
+              <Form className="">
                 <div className="">
+                  <CustomField
+                    label="First Name"
+                    name="firstName"
+                    type="text "
+                    placeholder="Enter first name"
+                  />
+                  <CustomField
+                    label="Last Name"
+                    name="lastName"
+                    type="text"
+                    placeholder="Enter last name"
+                  />
+                  <CustomField
+                    label="Preferred Username"
+                    name="userName"
+                    type="text"
+                    placeholder="Enter username"
+                  />
+                  <CustomField
+                    label="Phone Number"
+                    name="phoneNumber"
+                    type="tel"
+                    placeholder="Enter phone number"
+                    req="(optional)"
+                  />
+                </div>
+
+                <div className="  mt-9 sm:m-0">
                   <Button disabled={!(isValid && dirty)}>Continue</Button>
 
                   <h3 className=" text-base text-textBody text-center my-4">

@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  
 }
 .activeLink {
   color: black;
@@ -72,15 +73,7 @@ margin-right: 5px;
 
 
 /* dropdown */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
 
-body {
-  background: #fcfcfc;
-}
 
 .container {
   width: 100%;
@@ -107,7 +100,6 @@ body {
   padding: 10px;
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: 500;
-  color: #333;
   
 }
 .dropdown .dropdown-content .dropdown-item {

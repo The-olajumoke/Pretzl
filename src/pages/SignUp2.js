@@ -40,7 +40,7 @@ few more details"
       extraText="You are almost there."
       setactiveModal={setactiveModal}
     >
-      <div className=" border sm:border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl   p-0 sm:px-20 sm:py-7 sm:pb-8">
+      <div className=" border sm:border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl   p-0 sm:px-20 sm:py-7 sm:pb-4">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
@@ -58,7 +58,7 @@ few more details"
             onSubmit={handleSubmit}
           >
             {({ isSubmitting, isValid, dirty }) => (
-              <Form className="flex flex-col">
+              <Form className="">
                 <CustomField
                   label="Email Address"
                   name="email"
@@ -83,7 +83,7 @@ few more details"
                   type="password"
                   placeholder="Repeat password"
                 />
-                <div>
+                <div className="mt-9 sm:m-0">
                   <Button disabled={!(isValid && dirty)}>Continue</Button>
                   <h3 className=" text-base text-textBody text-center my-4">
                     If you don't have an account,

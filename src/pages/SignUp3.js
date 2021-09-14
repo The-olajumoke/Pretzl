@@ -13,6 +13,7 @@ import CustomSelect from "../components/Form/CustomSelect";
 import Option from "../components/Form/Option";
 import Dropdown from "../components/Form/Dropdown";
 import Button from "../components/SignUp/Button";
+import ResponsiveCheckbox from "../components/Form/ResponsiveCheckbox";
 
 function SignUp3({ activeModal, setactiveModal }) {
   const [guest, setGuest] = useState(false);
@@ -22,8 +23,7 @@ function SignUp3({ activeModal, setactiveModal }) {
 
   const [loginBtn, setLoginBtn] = useState(false);
 
-  const phoneRegExp =
-    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   const validationSchema = Yup.object({
     acceptedTerms: Yup.boolean()
       .oneOf([true], "Please check to proceed")
@@ -33,16 +33,18 @@ function SignUp3({ activeModal, setactiveModal }) {
   return (
     <SignInCont
       title="Sign Up"
+      p="p-1/2"
       largeText="Final Questions"
+      extraText=""
       setactiveModal={setactiveModal}
     >
-      <div className="border sm:border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl   p-0 sm:px-20 sm:py-7 sm:pb-8">
+      <div className="border sm:border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl   p-0 sm:px-20 sm:py-7 sm:pb-4">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
         />
 
-        <div className="h-auto sm:h-full flex flex-col   justify-between p-2 sm:pt-5">
+        <div className="h-auto sm:h-full flex flex-col   justify-evenly p-2 sm:pt-5">
           <Formik
             initialValues={{
               acceptedTerms: false,
@@ -85,7 +87,7 @@ function SignUp3({ activeModal, setactiveModal }) {
                   />
                   <Dropdown
                     name="work"
-                    label="I am a:"
+                    label="I work in:"
                     selected={selected3}
                     setSelected={setSelected3}
                     initial="Where do you work"
@@ -99,6 +101,14 @@ function SignUp3({ activeModal, setactiveModal }) {
                     ]}
                   />
                 </div>
+
+                {/* <div className="ring">
+                  <ResponsiveCheckbox
+                    label="i am a:"
+                    checkboxes={["Student", "Teacher"]}
+                  />
+                  <ResponsiveCheckbox label="I work for a :" checkboxes={['k-12','College']}/>
+                </div> */}
 
                 <div
                   className=" flex flex-col justify-end
@@ -114,11 +124,14 @@ function SignUp3({ activeModal, setactiveModal }) {
                   <InputCheckbox name="recieveInfo">
                     I agree to receive Inso news and updates
                   </InputCheckbox>
-                  <Button mt="mt-2" disabled={!(isValid && dirty)}>
-                    Continue
-                  </Button>
 
-                  <h3 className=" text-base text-textBody text-center my-4">
+                  <div className="sm:m-0 mt-9">
+                    <Button  disabled={!(isValid && dirty)}>
+                      Continue
+                    </Button>
+                  </div>
+
+                  <h3 className="text-sm sm:text-base text-textBody text-center my-4">
                     If you don't have an account,
                     <button
                       onClick={() => setactiveModal("signUp")}

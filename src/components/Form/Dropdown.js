@@ -7,7 +7,7 @@ function Dropdown({name, label, selected, initial, setSelected ,options}) {
   const [isActive, setIsActive] = useState(false);
 // console.log(selected,initial)
   return (
-    <div className="my-2">
+    <div className=" mb-5 my-2">
       <label className="text-primary">{label}</label>
       <div className=" dropdown bg-none rounded-md ring-1 ring-border w-full">
         <div
@@ -19,7 +19,7 @@ function Dropdown({name, label, selected, initial, setSelected ,options}) {
           <MdKeyboardArrowDown />
         </div>
         {isActive && (
-          <div className="dropdown-content  bg-white  z-10 w-3/4">
+          <div className=" dropdown-content  bg-white  z-10 w-3/4">
             {options.map((option, index) => (
               <div
                 key={index}

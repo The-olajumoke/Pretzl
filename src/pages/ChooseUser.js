@@ -140,7 +140,7 @@ setactiveModal(`${signModal}`)
 
               {continueBtn ? (
                 <button
-                  className=" w-full bg-border border p-3 rounded-full  text-lg flex justify-center px-10 items-center mt-0 sm:mt-6"
+                  className=" w-full bg-border border p-3 rounded-full  text-lg flex justify-center px-10 items-center  mt-5 sm:mt-6"
                   onClick={handleChooseUser}
                   name={chosenOption}
                 >
