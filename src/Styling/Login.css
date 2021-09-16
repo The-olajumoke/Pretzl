@@ -1,0 +1,112 @@
+.logInUser-content {
+  margin: 201px 52px 40px 85px;
+  height: 100%;
+}
+
+.log-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.form-cont {
+  width: 496px;
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-button {
+  width: 496px;
+  height: 64px;
+  border-radius: 118px;
+  padding: 17px 171px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.account-text {
+  width: 100%;
+  height: 27px;
+  
+  padding: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #686868;
+  justify-content: center;
+}
+.account-text button {
+  margin: 0 10px;
+  background: white;
+}
+
+
+
+@media (min-width: 1440px) {
+  .logInUser-content {
+    margin: 120px 0px 20px 67px;
+  }
+}
+@media (max-width: 768px) {
+  .log-form {
+    width: 100%;
+
+    height: auto;
+  }
+.logInUser-content {
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 100%;
+  }
+  .form-cont {
+    width: 100%;
+  }
+  .form-button {
+    width: 100%;
+    height: 54px;
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 515px) {
+ .log-form {
+    width: 100%;
+
+    height: auto;
+  }
+  .logInUser-content {
+    margin: 30px 0 0 0;
+    padding: 0;
+  }
+
+  .form-cont{
+    height: auto;
+    width: 100%;
+  }
+  .form-button {
+    width: 100%;
+  padding: 17px 80px;
+   
+  }
+  .account-text{
+      height:auto;
+      font-size: 14px;
+  }
+}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import * as Yup from "yup";
-
 import firstIcon from "../Exports/firstIcon.svg";
 import secondIcon from "../Exports/secondIcon.svg";
 import whiteicon from "../Exports/whiteicon.svg";

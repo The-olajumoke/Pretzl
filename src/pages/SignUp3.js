@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 import * as Yup from "yup";
+import "../Styling/SignUp.css";
 
 import { MdClose } from "react-icons/md";
 import SignInCont from "../components/SignInCont";
-import { FiArrowRight } from "react-icons/fi";
 
-import { Field, Form, Formik } from "formik";
-import CustomField from "../components/Form/CustomInput";
+import { Form, Formik } from "formik";
 import InputCheckbox from "../components/Form/InputCheckbox";
 import FormErrorMessage from "../components/Form/FormErrorMessage";
-import CustomSelect from "../components/Form/CustomSelect";
-import Option from "../components/Form/Option";
 import Dropdown from "../components/Form/Dropdown";
 import Button from "../components/SignUp/Button";
-import ResponsiveCheckbox from "../components/Form/ResponsiveCheckbox";
 
 function SignUp3({ activeModal, setactiveModal }) {
   const [guest, setGuest] = useState(false);
@@ -21,9 +17,6 @@ function SignUp3({ activeModal, setactiveModal }) {
   const [selected2, setSelected2] = useState("Select One");
   const [selected3, setSelected3] = useState("Where do you work");
 
-  const [loginBtn, setLoginBtn] = useState(false);
-
-  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   const validationSchema = Yup.object({
     acceptedTerms: Yup.boolean()
       .oneOf([true], "Please check to proceed")
@@ -33,18 +26,17 @@ function SignUp3({ activeModal, setactiveModal }) {
   return (
     <SignInCont
       title="Sign Up"
-      p="p-1/2"
       largeText="Final Questions"
       extraText=""
       setactiveModal={setactiveModal}
     >
-      <div className="border sm:border-btnText my-5 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  rounded-r-3xl   p-0 sm:px-20 sm:py-7 sm:pb-4">
+      <div className="">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
         />
 
-        <div className="h-auto sm:h-full flex flex-col   justify-evenly p-2 sm:pt-5">
+        <div className="signUp-content">
           <Formik
             initialValues={{
               acceptedTerms: false,
@@ -53,8 +45,8 @@ function SignUp3({ activeModal, setactiveModal }) {
             // onSubmit={handleSubmit}
           >
             {({ isSubmitting, isValid, dirty }) => (
-              <Form className="flex flex-col justify-between h-full">
-                <div className="">
+              <Form className="sign-form3">
+                <div className="frame-3">
                   <Dropdown
                     name="primaryUse"
                     label="I plan to primarily use Inso for:"
@@ -102,44 +94,25 @@ function SignUp3({ activeModal, setactiveModal }) {
                   />
                 </div>
 
-                {/* <div className="ring">
-                  <ResponsiveCheckbox
-                    label="i am a:"
-                    checkboxes={["Student", "Teacher"]}
-                  />
-                  <ResponsiveCheckbox label="I work for a :" checkboxes={['k-12','College']}/>
-                </div> */}
-
                 <div
-                  className=" flex flex-col justify-end
+                  className="other-part
                 "
                 >
-                  <div className="my-3 py-2 flex flex-col">
+                  <div className="checkboxCont">
                     <InputCheckbox name=" acceptedTerms">
                       I agree to <a href="">terms & conditions</a>
                     </InputCheckbox>
                     <FormErrorMessage name="acceptedTerms" />
+
+                    <InputCheckbox name="recieveInfo">
+                      I agree to receive Inso news and updates
+                    </InputCheckbox>
                   </div>
-
-                  <InputCheckbox name="recieveInfo">
-                    I agree to receive Inso news and updates
-                  </InputCheckbox>
-
-                  <div className="sm:m-0 mt-9">
-                    <Button  disabled={!(isValid && dirty)}>
+                  <div className="">
+                    <Button mt="mt-8" disabled={!(isValid && dirty)}>
                       Continue
                     </Button>
                   </div>
-
-                  <h3 className="text-sm sm:text-base text-textBody text-center my-4">
-                    If you don't have an account,
-                    <button
-                      onClick={() => setactiveModal("signUp")}
-                      className="text-primary"
-                    >
-                      Sign up
-                    </button>
-                  </h3>
                 </div>
               </Form>
             )}

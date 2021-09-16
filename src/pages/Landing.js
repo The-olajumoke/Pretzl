@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import landingimg from "../Exports/landingimg.svg";
 import landingCircle from "../Exports/landingcircle.svg";
 import { FiMessageSquare } from "react-icons/fi";
+import '../Styling/Landing.css'
 const Landing = () => {
   const [value, setValue] = useState("");
   const handleKey = (e) => {

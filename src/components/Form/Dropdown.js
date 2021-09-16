@@ -2,21 +2,23 @@ import React from "react";
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import FormErrorMessage from "./FormErrorMessage";
+import "../../Styling/CustomInput.css"
 function Dropdown({name, label, selected, initial, setSelected ,options}) {
 
   const [isActive, setIsActive] = useState(false);
 // console.log(selected,initial)
   return (
-    <div className=" mb-5 my-2">
-      <label className="text-primary">{label}</label>
-      <div className=" dropdown bg-none rounded-md ring-1 ring-border w-full">
+    <div className=" mb-5">
+      <label className="mb-3"
+      >{label}</label>
+      <div className="dropdown">
         <div
-          className="dropdown-btn text-textBody"
+          className=" dropdown-btn "
           onClick={(e) => setIsActive(!isActive)}
         >
           {selected}
 
-          <MdKeyboardArrowDown />
+          <MdKeyboardArrowDown style={{width: "24px",height: "24px"}} />
         </div>
         {isActive && (
           <div className=" dropdown-content  bg-white  z-10 w-3/4">

@@ -1,79 +1,58 @@
 * {
   padding: 0;
   margin: 0;
-  
+}
+body {
+  /* overflow: hidden; */
 }
 .activeLink {
   color: black;
 }
-.content {
-  padding: 10px;
-  
-}
 
-.icon{
-height: 100%;
-bottom:0;
-font-size: 25px;
-margin-right: 5px;
+.icon {
+  height: 100%;
+  bottom: 0;
+  font-size: 25px;
+  margin-right: 5px;
 }
 
 .mockup {
-  
   height: 589.11px;
   position: absolute;
   right: -120px;
-
 }
 
-.largeText{
-  line-height: 72px;
-}
-@media (max-width: 1024px) { 
-
-.mockup{
-  right: -50px;
-}
-
-.icon{
-  font-size:23px;
-}
-
+@media (max-width: 1024px) {
+  .mockup {
+    right: -50px;
   }
-
-
-	@media (max-width: 640px) {
-
-.mockup{
-  right: -110px;
-}
-.mockupCont{
-  margin: 0;
-}
-    .icon{
-  font-size:20px;
-}
-.largeText{
-  line-height: 50px;
-}
-.circle{
-  height: 500px;
 }
 
-}
-
-@media (min-width:1920px) {
-  .mockup{
-  right: 0px;
-
+@media (max-width: 640px) {
+  .mockup {
+    right: -110px;
   }
-  
+  .mockupCont {
+    margin: 0;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .largeText {
+    line-height: 50px;
+  }
+  .circle {
+    height: 500px;
+  }
 }
 
-
+@media (min-width: 1920px) {
+  .mockup {
+    right: 0px;
+  }
+}
 
 /* dropdown */
-
 
 .container {
   width: 100%;
@@ -82,11 +61,28 @@ margin-right: 5px;
 .dropdown {
   user-select: none;
   position: relative;
+  width: 496px;
+  height: 64px;
+  border: 1px solid #0eb4f6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  background: none !important;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 30, 47, 0.4);
+  padding: 20px 34px;
 }
 .dropdown .dropdown-btn {
-  padding: 15px 20px;
-  background:none;
-  /* box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06); */
+  background: none;
+  width: 496px;
+  height: 64px;
+  color: rgba(0, 30, 47, 0.4);
+
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -100,7 +96,6 @@ margin-right: 5px;
   padding: 10px;
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: 500;
-  
 }
 .dropdown .dropdown-content .dropdown-item {
   padding: 8px;

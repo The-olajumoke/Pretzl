@@ -3,24 +3,17 @@ import * as Yup from "yup";
 
 import { MdClose } from "react-icons/md";
 import SignInCont from "../components/SignInCont";
+import "../Styling/SignUp.css";
 import { Form, Formik } from "formik";
 import CustomField from "../components/Form/CustomInput";
 import Button from "../components/SignUp/Button";
 function SignUp1({ activeModal, setactiveModal }) {
-  const [guest, setGuest] = useState(false);
-  const [user, setUser] = useState(false);
-  const [continueBtn, setContinueBtn] = useState(false);
-  const [loginBtn, setLoginBtn] = useState(false);
-  const [chosenOption, setChosenOption] = useState(false);
-
   const handleSubmit = (values, { setSubmitting, resetForm }) => {
-    setTimeout(() => {
-      // STORE VALUES SOMEWHERE
+    // STORE VALUES SOMEWHERE
 
-      resetForm();
-      setSubmitting(false);
-      setactiveModal("signUp2");
-    }, 2000);
+    resetForm();
+    setSubmitting(false);
+    setactiveModal("signUp2");
   };
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   const validationSchema = Yup.object({
@@ -43,13 +36,13 @@ function SignUp1({ activeModal, setactiveModal }) {
       extraText="Sign up to all Inso features."
       setactiveModal={setactiveModal}
     >
-      <div className=" border sm:border-btnText my-2 sm:my-0  flex flex-col justify-around bg-white col-span-3 w-full  sm:rounded-r-3xl px-0  p-0 sm:px-20 sm:py-7 sm:pb-4">
+      <div className="">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
         />
 
-        <div className="h-auto sm:h-full flex flex-col justify-evenly sm:p-2 sm:pt-5">
+        <div className="signUp-content">
           <Formik
             initialValues={{
               firstName: "",
@@ -62,8 +55,8 @@ function SignUp1({ activeModal, setactiveModal }) {
             isValid={false}
           >
             {({ isSubmitting, isValid, isValidating, dirty }) => (
-              <Form className="">
-                <div className="">
+              <Form className="sign-form ">
+                <div className="frame">
                   <CustomField
                     label="First Name"
                     name="firstName"
@@ -91,18 +84,20 @@ function SignUp1({ activeModal, setactiveModal }) {
                   />
                 </div>
 
-                <div className="  mt-9 sm:m-0">
-                  <Button disabled={!(isValid && dirty)}>Continue</Button>
+                <div className="btn-holder">
+                  <Button mt="mt-10" disabled={!(isValid && dirty)}>
+                    Continue
+                  </Button>
 
-                  <h3 className=" text-base text-textBody text-center my-4">
-                    If you don't have an account,
+                  <div className=" account-text">
+                    <h3 className="">Already have an account?</h3>
                     <button
-                      onClick={() => setactiveModal("logInGuest")}
+                      onClick={() => setactiveModal("logInUser")}
                       className="text-primary"
                     >
                       Log in
                     </button>
-                  </h3>
+                  </div>
                 </div>
               </Form>
             )}

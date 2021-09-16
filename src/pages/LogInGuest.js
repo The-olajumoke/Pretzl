@@ -1,43 +1,18 @@
 import React, { useState } from "react";
 import * as Yup from "yup";
+import "../Styling/Login.css";
+import "../Styling/SignUp.css"
 
-import firstIcon from "../Exports/firstIcon.svg";
-import secondIcon from "../Exports/secondIcon.svg";
-import whiteicon from "../Exports/whiteicon.svg";
 import { MdClose } from "react-icons/md";
 import { FiArrowRight } from "react-icons/fi";
 import SignInCont from "../components/SignInCont";
 import { Form, Formik } from "formik";
 import CustomField from "../components/Form/CustomInput";
-import ChooseUser from "./ChooseUser";
 import Button from "../components/SignUp/Button";
 function LogInGuest({ activeModal, setactiveModal }) {
   const [guest, setGuest] = useState(false);
   const [user, setUser] = useState(false);
-  const [continueBtn, setContinueBtn] = useState(false);
-  const [loginBtn, setLoginBtn] = useState(false);
-  const [chosenOption, setChosenOption] = useState(false);
 
-  const setUserActive = () => {
-    setUser(true);
-    setGuest(false);
-    setContinueBtn(true);
-    setChosenOption("signUp1");
-  };
-  const setGuestActive = () => {
-    setUser(false);
-    setGuest(true);
-    setContinueBtn(true);
-    setChosenOption("signUp2");
-  };
-  const handleSignUp1 = () => {};
-
-  const handleSignUp2 = () => {};
-
-  const handleChooseUser = (e) => {
-    const signModal = e.target.name;
-    setactiveModal(`${signModal}`);
-  };
   return (
     <SignInCont
       title="Log In"
@@ -45,13 +20,13 @@ function LogInGuest({ activeModal, setactiveModal }) {
       extraText="Create an account to gain full access to our features."
       setactiveModal={setactiveModal}
     >
-      <div className=" border sm:border-btnText my-5 sm:my-0  flex flex-col justify-items-end bg-white col-span-3 w-full  rounded-r-3xl  p-0 sm:p-20 sm:pb-12">
+      <div className="">
         <MdClose
           onClick={() => setactiveModal(false)}
           className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
         />
 
-        <div className="h-full sm:h-full flex flex-col justify-evenly p-2 sm:pt-5">
+        <div className="logInUser-content">
           <Formik
             initialValues={{
               email: "",
@@ -67,35 +42,34 @@ function LogInGuest({ activeModal, setactiveModal }) {
             })}
           >
             {({ isSubmitting, isValid, isValidating, dirty }) => (
-              <Form className="flex flex-col justify-evenly h-full ">
-                <div className="h-64 flex flex-col justify-end">
+              <Form className="log-form ">
+                <div className="form-cont">
                   <CustomField
                     label="Email address"
                     placeholder="Enter email..."
                     type="email"
                     name="email"
-                    // loginBtn={loginBtn}
-                    // setLoginBtn={setLoginBtn}
                   />
                   <CustomField
-                    label="Username"
-                    placeholder="Enter username..."
+                    label="Preferred username"
+                    placeholder="Enter preferred username..."
                     type="text"
                     name="username"
                   />
                 </div>
-                <div className=" mt-6 sm:mt-0 h-2/6 flex flex-col justify-end">
-                  <Button disabled={!(isValid && dirty)}>Log In</Button>
+                <div className="btn-holder">
+                  <Button mt="mt-16" disabled={!(isValid && dirty)}>Log In</Button>
 
-                  <h3 className="text-sm sm:text-base text-textBody text-center my-4">
-                    If you don't have an account,
+                  <div className="account-text">
+                    <h3 className="">If you don't have an account,</h3>
+
                     <button
                       onClick={() => setactiveModal("chooseUser")}
-                      className="text-primary"
+                      className=" text-primary"
                     >
                       Sign up
                     </button>
-                  </h3>
+                  </div>
                 </div>
               </Form>
             )}

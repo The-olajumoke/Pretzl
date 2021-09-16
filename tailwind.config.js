@@ -35,7 +35,7 @@ module.exports = {
       inputField: "#F0F0F0",
       textBody: "#686868",
       black: "#000000",
-      boldtext: "011B25",
+      boldtext: "#011B25",
       desc: "#9D9D9D",
       footer: "#FCFCFC",
       btnText: "#C1C1C1",
