@@ -1,12 +1,11 @@
 .main-content {
   width: 426.65px;
   height: 495px;
-  margin: 103px 122px 103px 85px;
+  margin: 95px 122px 103px 85px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background:#FFFFFF;
-
+  background: #ffffff;
 }
 
 .section-title {
@@ -17,13 +16,11 @@
   display: flex;
   align-items: center;
   color: #011b25;
-  background:#FFFFFF;
-
+  background: #ffffff;
 }
 .chooseBtn {
   width: 426px;
   height: 108px;
-
   border-radius: 6px;
   display: flex;
   justify-content: space-evenly;
@@ -89,9 +86,7 @@
 @media (min-width: 1440px) {
   .main-content {
     margin: 130px 60px 40px 100px;
-  
   }
-
 }
 @media (max-width: 1024px) {
   .main-content {
@@ -112,12 +107,7 @@
     height: 108px;
     justify-self: center;
   }
-  .ctnBtn {
-    width: 100%;
-    font-size: 16px;
-    border-radius: 107px;
-    margin-top: 40px;
-  }
+  
 }
 @media (max-width: 768px) {
   .main-content {
@@ -154,5 +144,18 @@
   }
   .ctnBtn {
     height: 54px;
+  }
+}
+
+@media (max-width: 380px) {
+  .section-title {
+    margin:20px 0;
+  }
+  .btn-Cont {
+    margin: 0;
+  }
+  .main-content {
+    margin-top: 0;
+    height: 100%;
   }
 }

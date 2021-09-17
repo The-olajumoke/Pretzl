@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import '../Styling/Login.css'
 import { MdClose } from "react-icons/md";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight,FiArrowLeft } from "react-icons/fi";
 import SignInCont from "../components/SignInCont";
 import { Form, Formik } from "formik";
 import CustomField from "../components/Form/CustomInput";
@@ -20,14 +20,23 @@ function LogInUser({ activeModal, setactiveModal }) {
       largeText="Say something different."
       extraText="Enter login details."
       setactiveModal={setactiveModal}
+      previousModal="false"
     >
-      <div className="">
-        <MdClose
-          onClick={() => setactiveModal(false)}
-          className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
-        />
-
+      <div className="h-full">
         <div className="logInUser-content ">
+          <div className="flex  justify-between mb-8 ml-0">
+            <div
+              onClick={() => setactiveModal("false")}
+              className="backBtn hidden lg:flex cursor-pointer  "
+            >
+              <FiArrowLeft className=" backIcon" />
+              <h3>Back</h3>
+            </div>
+            <MdClose
+              onClick={() => setactiveModal(false)}
+              className="hidden lg:flex text-primary cursor-pointer  h-8 w-8"
+            />
+          </div>
           <Formik
             initialValues={{
               email: "",

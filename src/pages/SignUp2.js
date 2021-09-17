@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 
 import { MdClose } from "react-icons/md";
+import { FiArrowLeft } from "react-icons/fi";
+
 import SignInCont from "../components/SignInCont";
 import { Form, Formik } from "formik";
 import CustomField from "../components/Form/CustomInput";
@@ -35,14 +37,24 @@ function SignUp2({ activeModal, setactiveModal }) {
 few more details"
       extraText="You are almost there."
       setactiveModal={setactiveModal}
+      previousModal="signUp1"
     >
       <div className="">
-        <MdClose
-          onClick={() => setactiveModal(false)}
-          className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
-        />
-
         <div className="signUp-content ">
+          <div className="flex  justify-between mb-8 ml-0">
+            <div
+              onClick={() => setactiveModal("signUp1")}
+              className="backBtn hidden lg:flex cursor-pointer  "
+            >
+              <FiArrowLeft className=" backIcon" />
+              <h3>Back</h3>
+            </div>
+
+            <MdClose
+              onClick={() => setactiveModal(false)}
+              className="hidden lg:flex text-primary cursor-pointer  h-8 w-8"
+            />
+          </div>
           <Formik
             initialValues={{
               email: "",

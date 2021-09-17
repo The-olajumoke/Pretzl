@@ -15,33 +15,7 @@ import SignUp2 from "./SignUp2";
 import SignUp1 from "./SignUp1";
 import SignUp3 from "./SignUp3";
 function Modal({ activeModal, setactiveModal }) {
-  const [guest, setGuest] = useState(false);
-  const [user, setUser] = useState(false);
-  const [continueBtn, setContinueBtn] = useState(false);
-  const [loginBtn, setLoginBtn] = useState(false);
-  const [chosenOption, setChosenOption] = useState(false);
-
-  const setUserActive = () => {
-    setUser(true);
-    setGuest(false);
-    setContinueBtn(true);
-    setChosenOption("signUp1");
-  };
-  const setGuestActive = () => {
-    setUser(false);
-    setGuest(true);
-    setContinueBtn(true);
-    setChosenOption("signUp2");
-  };
-  const handleSignUp1 = () => {};
-
-  const handleSignUp2 = () => {};
-
-  const handleChooseUser = (e) => {
-    const signModal = e.target.name;
-    setactiveModal(`${signModal}`);
-  };
-
+  
   return (
     <div>
       {/* CHOOSEUSER */}

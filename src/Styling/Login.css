@@ -1,13 +1,39 @@
+.backBtn h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #07a098;
+}
+
+.backIcon {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px 0 0;
+
+  color: #07a098;
+}
+.backIconsm {
+  width: 30px;
+  height: 30px;
+  color: #07a098;
+}
 .logInUser-content {
-  margin: 201px 52px 40px 85px;
+  margin: 10px 52px 40px 85px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .log-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 530px;
 }
 
 .form-cont {
@@ -37,7 +63,7 @@
 .account-text {
   width: 100%;
   height: 27px;
-  
+
   padding: 0;
   font-family: Poppins;
   font-style: normal;
@@ -54,12 +80,10 @@
   background: white;
 }
 
-
-
 @media (min-width: 1440px) {
-  .logInUser-content {
+  /* .logInUser-content {
     margin: 120px 0px 20px 67px;
-  }
+  } */
 }
 @media (max-width: 768px) {
   .log-form {
@@ -67,7 +91,7 @@
 
     height: auto;
   }
-.logInUser-content {
+  .logInUser-content {
     margin: 0 0 0 0;
     padding: 0;
     width: 100%;
@@ -86,7 +110,7 @@
   }
 }
 @media (max-width: 515px) {
- .log-form {
+  .log-form {
     width: 100%;
 
     height: auto;
@@ -96,17 +120,16 @@
     padding: 0;
   }
 
-  .form-cont{
+  .form-cont {
     height: auto;
     width: 100%;
   }
   .form-button {
     width: 100%;
-  padding: 17px 80px;
-   
+    padding: 17px 80px;
   }
-  .account-text{
-      height:auto;
-      font-size: 14px;
+  .account-text {
+    height: auto;
+    font-size: 14px;
   }
 }

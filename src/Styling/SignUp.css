@@ -1,6 +1,7 @@
 .signUp-content {
-  margin: 62px 0px 38px 67px;
+  margin: 35px 0px 38px 67px;
   padding: 0;
+
 }
 
 .sign-form,
@@ -13,25 +14,32 @@
 }
 .sign-form3 {
   justify-content: space-between;
+  align-items: center;
+  padding: 0 ;
+  
+
 }
 
 .frame {
   width: 496px;
   height: 434px;
+
 }
 .frame-3 {
-  width: 496px;
+  /* width: 496px; */
+  width: 100%;
   height: 358px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .btn-holder {
   width: 100%;
 }
 .other-part {
-  width: 496px;
-  height: 151px;
+  width: 100%;
+  height: 190px;
 }
 .checkboxCont {
   height: 57px;
@@ -55,18 +63,20 @@
 
 @media (min-width: 1440px) {
   .signUp-content {
-    margin: 80px 0px 20px 67px;
+    margin: 35px 0px 20px 67px;
   }
 }
 @media (max-width: 768px) {
   .sign-form,
   .sign-form3 {
     width: 100%;
+    align-items: center;
 
+/* align-items: center; */
     height: auto;
   }
   .signUp-content {
-    margin: 0 0 0 0;
+    margin:0;
     padding: 0;
     width: 100%;
   }
@@ -78,16 +88,18 @@
   .sign-form,
   .sign-form3 {
     width: 100%;
-
+align-items: normal;
     height: auto;
   }
   .signUp-content {
     margin: 30px 0 0 0;
     padding: 0;
+    width: 100%;
   }
 
   .frame {
     height: auto;
     width: 100%;
   }
+  
 }

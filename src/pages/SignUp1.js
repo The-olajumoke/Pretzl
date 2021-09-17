@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 
 import { MdClose } from "react-icons/md";
+import { FiArrowLeft } from "react-icons/fi";
+
 import SignInCont from "../components/SignInCont";
 import "../Styling/SignUp.css";
+import "../Styling/Login.css";
 import { Form, Formik } from "formik";
 import CustomField from "../components/Form/CustomInput";
 import Button from "../components/SignUp/Button";
@@ -35,14 +38,24 @@ function SignUp1({ activeModal, setactiveModal }) {
       largeText="Say something different."
       extraText="Sign up to all Inso features."
       setactiveModal={setactiveModal}
+      previousModal="chooseUser"
     >
       <div className="">
-        <MdClose
-          onClick={() => setactiveModal(false)}
-          className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
-        />
-
         <div className="signUp-content">
+          <div className="flex  justify-between mb-8  ml-0">
+            <div
+              onClick={() => setactiveModal("chooseUser")}
+              className="backBtn hidden lg:flex cursor-pointer  "
+            >
+              <FiArrowLeft className=" backIcon" />
+              <h3>Back</h3>
+            </div>
+
+            <MdClose
+              onClick={() => setactiveModal(false)}
+              className="hidden lg:flex text-primary cursor-pointer  h-8 w-8"
+            />
+          </div>
           <Formik
             initialValues={{
               firstName: "",

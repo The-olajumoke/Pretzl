@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../Exports/logo.svg";
+import Logo from "../Exports/inso 4@2x.png";
 import Modal from "../pages/Modal";
 function Header() {
   const [userModal, setUserModal] = useState(false);

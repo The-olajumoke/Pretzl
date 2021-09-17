@@ -1,0 +1,139 @@
+/* HEADER */
+.sideHeading {
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 48px 15px 49px;
+  position: absolute;
+  width: 1440px;
+  height: 75px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+.sideHeading-logoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 285px;
+  border: rebeccapurple 2px dashed;
+}
+.toggleBtn {
+  width: 40px;
+  height: 40px;
+  border: rebeccapurple 2px dashed;
+}
+.heading-logo {
+  width: 119.49px;
+  height: 60.87px;
+  margin: 0px 56px;
+}
+
+/* //////SIDEBAR */
+.side-Cont {
+  position: fixed;
+  top: 75px;
+  /* height: 949px; */
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rebeccapurple;
+  padding-left: 47px;
+}
+
+.userDetailsCont {
+  border: 2px solid rebeccapurple;
+  display: flex;
+  align-items: center;
+  padding-top: 48px;
+  padding-right: 42px;
+}
+.user-img {
+  width: 45px;
+  height: 45px;
+  left: 0px;
+  top: 2px;
+  border: rebeccapurple 2px solid;
+  border-radius: 500px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 15px;
+}
+.details {
+  flex-direction: column;
+}
+.details h3 {
+  width: 181.92px;
+  height: 27px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 137.15%;
+  display: flex;
+  align-items: center;
+}
+.details span {
+  position: static;
+  width: 181.92px;
+  height: 22px;
+  left: 0px;
+  top: 27px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 137.15%;
+
+  display: flex;
+  align-items: center;
+
+  color: #07a098;
+}
+.upgradeBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  width: 230px;
+  height: 40px;
+  border: 2px solid #0eb4f6;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.upgradeBtn h3{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #07A098;
+}
+
+/* ///////NAV BAR//// */
+.navItem {
+  padding: 26px 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: rebeccapurple 2px solid;
+}
+
+.nav-icon {
+  margin: 0 15px;
+  width: 24px;
+  height: 24px;
+}
+.nav-text {
+  width: 92px;
+  height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #686868;
+}

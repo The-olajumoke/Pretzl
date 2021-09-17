@@ -12,51 +12,38 @@ import CustomField from "../components/Form/CustomInput";
 function ChooseUser({ activeModal, setactiveModal }) {
   const [guest, setGuest] = useState(false);
   const [user, setUser] = useState(false);
-  const [continueBtn, setContinueBtn] = useState(false);
-  const [loginBtn, setLoginBtn] = useState(false);
-  const [chosenOption, setChosenOption] = useState(false);
 
-  const setUserActive = () => {
-    setUser(true);
-    setGuest(false);
-    setContinueBtn(true);
-    setChosenOption("signUp1");
-  };
-  const setGuestActive = () => {
-    setUser(false);
-    setGuest(true);
-    setContinueBtn(true);
-    setChosenOption("logInGuest");
+  const handleChooseGuest = () => {
+    setactiveModal("logInGuest");
+
   };
 
-  const handleChooseUser = (e) => {
-    const signModal = e.target.name;
-    setactiveModal(`${signModal}`);
+  const handleChooseUser = () => {
+    setactiveModal("signUp1");
+
   };
   return (
     <SignInCont
       title="Sign Up"
       largeText="How would you like to log in?"
-
       setactiveModal={setactiveModal}
       width="w-1/2"
+      previousModal="false"
     >
       {
         <div className="  ">
           <MdClose
             onClick={() => setactiveModal(false)}
-            className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
+            className="hidden lg:flex text-primary absolute right-5 top-3 sm:right-0 sm:top-10 cursor-pointer  h-8 w-8"
           />
           <div className="main-content ">
-            <h3 className=" section-title">
-              Join Discussion!
-            </h3>
+            <h3 className=" section-title">Join Discussion!</h3>
 
             <div className="btn-Cont">
               {/* BUTTON*/}
               {/* USER */}
               <button
-                onClick={setUserActive}
+                onClick={handleChooseUser}
                 id="user"
                 className={`chooseBtn  ${
                   user ? "bg-primary" : "bg-inputField"
@@ -97,8 +84,8 @@ function ChooseUser({ activeModal, setactiveModal }) {
               {/* GUESt */}
 
               <button
-                onClick={setGuestActive}
-                id="user"
+                onClick={handleChooseGuest}
+                id="guest"
                 className={`chooseBtn  ${
                   guest ? "bg-primary" : "bg-inputField"
                 }`}
@@ -135,19 +122,6 @@ function ChooseUser({ activeModal, setactiveModal }) {
                   />
                 </div>
               </button>
-
-              {continueBtn ? (
-                <button
-                  className=" ctnBtn "
-                  onClick={handleChooseUser}
-                  name={chosenOption}
-                >
-                  Continue
-                  <FiArrowRight className="right-icon " />
-                </button>
-              ) : (
-                ""
-              )}
             </div>
           </div>
         </div>

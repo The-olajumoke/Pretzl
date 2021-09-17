@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import * as Yup from "yup";
 import "../Styling/Login.css";
-import "../Styling/SignUp.css"
+import "../Styling/SignUp.css";
 
 import { MdClose } from "react-icons/md";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowLeft } from "react-icons/fi";
 import SignInCont from "../components/SignInCont";
 import { Form, Formik } from "formik";
 import CustomField from "../components/Form/CustomInput";
@@ -19,14 +19,23 @@ function LogInGuest({ activeModal, setactiveModal }) {
       largeText="Welcome to Inso."
       extraText="Create an account to gain full access to our features."
       setactiveModal={setactiveModal}
+      previousModal="chooseUser"
     >
-      <div className="">
-        <MdClose
-          onClick={() => setactiveModal(false)}
-          className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
-        />
-
+      <div className=" h-full">
         <div className="logInUser-content">
+          <div className="flex  justify-between mb-8 ml-0">
+            <div
+              onClick={() => setactiveModal("chooseUser")}
+              className="backBtn hidden lg:flex cursor-pointer  "
+            >
+              <FiArrowLeft className=" backIcon" />
+              <h3>Back</h3>
+            </div>
+            <MdClose
+              onClick={() => setactiveModal(false)}
+              className="hidden lg:flex text-primary cursor-pointer  h-8 w-8"
+            />
+          </div>
           <Formik
             initialValues={{
               email: "",
@@ -58,7 +67,9 @@ function LogInGuest({ activeModal, setactiveModal }) {
                   />
                 </div>
                 <div className="btn-holder">
-                  <Button mt="mt-16" disabled={!(isValid && dirty)}>Log In</Button>
+                  <Button mt="mt-1" disabled={!(isValid && dirty)}>
+                    Log In
+                  </Button>
 
                   <div className="account-text">
                     <h3 className="">If you don't have an account,</h3>

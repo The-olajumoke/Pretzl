@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import * as Yup from "yup";
 import "../Styling/SignUp.css";
+import { Link } from "react-router-dom";
+
+import { FiArrowLeft } from "react-icons/fi";
 
 import { MdClose } from "react-icons/md";
 import SignInCont from "../components/SignInCont";
@@ -29,14 +32,24 @@ function SignUp3({ activeModal, setactiveModal }) {
       largeText="Final Questions"
       extraText=""
       setactiveModal={setactiveModal}
+      previousModal="signUp2"
     >
       <div className="">
-        <MdClose
-          onClick={() => setactiveModal(false)}
-          className="hidden lg:flex text-black absolute right-5 top-3 sm:right-10 sm:top-10 cursor-pointer  h-8 w-8"
-        />
-
         <div className="signUp-content">
+          <div className="flex  justify-between mb-8 ml-0">
+            <div
+              onClick={() => setactiveModal("signUp2")}
+              className="backBtn hidden lg:flex cursor-pointer  "
+            >
+              <FiArrowLeft className=" backIcon" />
+              <h3>Back</h3>
+            </div>
+
+            <MdClose
+              onClick={() => setactiveModal(false)}
+              className="hidden lg:flex text-primary cursor-pointer  h-8 w-8"
+            />
+          </div>
           <Formik
             initialValues={{
               acceptedTerms: false,
@@ -45,7 +58,7 @@ function SignUp3({ activeModal, setactiveModal }) {
             // onSubmit={handleSubmit}
           >
             {({ isSubmitting, isValid, dirty }) => (
-              <Form className="sign-form3">
+              <Form className="sign-form-3">
                 <div className="frame-3">
                   <Dropdown
                     name="primaryUse"
@@ -94,9 +107,7 @@ function SignUp3({ activeModal, setactiveModal }) {
                   />
                 </div>
 
-                <div
-                  className="other-part
-                "
+          <div className="other-part"
                 >
                   <div className="checkboxCont">
                     <InputCheckbox name=" acceptedTerms">
@@ -108,16 +119,17 @@ function SignUp3({ activeModal, setactiveModal }) {
                       I agree to receive Inso news and updates
                     </InputCheckbox>
                   </div>
-                  <div className="">
-                    <Button mt="mt-8" disabled={!(isValid && dirty)}>
-                      Continue
-                    </Button>
-                  </div>
+                  <Link to="" className="btn-holder">
+                    <div className="btn-holder">
+                      <Button mt="mt-8" disabled={!(isValid && dirty)}>
+                        Continue
+                      </Button>
+                    </div>
+                  </Link>
                 </div>
               </Form>
             )}
           </Formik>
-          {/* button */}
         </div>
       </div>
     </SignInCont>

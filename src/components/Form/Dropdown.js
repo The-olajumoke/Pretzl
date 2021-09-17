@@ -8,8 +8,8 @@ function Dropdown({name, label, selected, initial, setSelected ,options}) {
   const [isActive, setIsActive] = useState(false);
 // console.log(selected,initial)
   return (
-    <div className=" mb-5">
-      <label className="mb-3"
+    <div className="drop-container ">
+      <label className=""
       >{label}</label>
       <div className="dropdown">
         <div
