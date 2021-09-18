@@ -1,0 +1,19 @@
+.landingImg {
+  border: green 2px solid;
+  width: 139.7px;
+  height: 71.17px;
+}
+.chooseUser{
+    width: 133px;
+height: 44px;
+}
+.chooseUser:hover{
+    color: white;
+    
+}
+@media (max-width: "815px") {
+  .landingImg {
+    width: 87.1px;
+    height: 40.84px;
+  }
+}

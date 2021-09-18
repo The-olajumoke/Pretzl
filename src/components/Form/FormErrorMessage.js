@@ -4,7 +4,7 @@ const FormErrorMessage = ({ name }) => {
   return (
     <ErrorMessage
       name={name}
-      className=" text-xs text-red "
+      className=" text-xs text-red pl-4 sm:pl-9 "
       component="div"
     />
   );

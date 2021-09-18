@@ -9,41 +9,47 @@ import { FiArrowRight } from "react-icons/fi";
 import SignInCont from "../components/SignInCont";
 import { Form, Formik } from "formik";
 import CustomField from "../components/Form/CustomInput";
+import Page from "../components/SignUp/Page";
+import history from "../utils/history";
 function ChooseUser({ activeModal, setactiveModal }) {
   const [guest, setGuest] = useState(false);
   const [user, setUser] = useState(false);
 
-  const handleChooseGuest = () => {
-    setactiveModal("logInGuest");
-
+  const handleBack = () => {
+  history.push('./')
   };
 
-  const handleChooseUser = () => {
-    setactiveModal("signUp1");
-
-  };
+  
   return (
-    <SignInCont
-      title="Sign Up"
-      largeText="How would you like to log in?"
-      setactiveModal={setactiveModal}
-      width="w-1/2"
-      previousModal="false"
-    >
-      {
-        <div className="  ">
-          <MdClose
-            onClick={() => setactiveModal(false)}
-            className="hidden lg:flex text-primary absolute right-5 top-3 sm:right-0 sm:top-10 cursor-pointer  h-8 w-8"
-          />
-          <div className="main-content ">
-            <h3 className=" section-title">Join Discussion!</h3>
+    <Page>
+      <SignInCont
+        title="Sign Up"
+        largeText="How would you like to log in?"
+        setactiveModal={setactiveModal}
+        width="w-1/2"
+        backBtnFunction={handleBack}
+      >
+        {
+          <div className="main-content">
+            <div className="flex justify-end mb-8 ml-0">
+              <MdClose
+                // onClick={() => setactiveModal(false)}
+                onClick={() => {
+                  history.push("./");
+                }}
+                className="hidden lg:flex text-primary cursor-pointer  h-8 w-8"
+              />
+            </div>
+            <h3 className=" section-title ">Join Discussion!</h3>
 
             <div className="btn-Cont">
               {/* BUTTON*/}
               {/* USER */}
               <button
-                onClick={handleChooseUser}
+                // onClick={handleChooseUser}
+                onClick={() => {
+                  history.push("/sign-as-user");
+                }}
                 id="user"
                 className={`chooseBtn  ${
                   user ? "bg-primary" : "bg-inputField"
@@ -84,7 +90,10 @@ function ChooseUser({ activeModal, setactiveModal }) {
               {/* GUESt */}
 
               <button
-                onClick={handleChooseGuest}
+                // onClick={handleChooseGuest}
+                onClick={() => {
+                  history.push("/sign-as-guest");
+                }}
                 id="guest"
                 className={`chooseBtn  ${
                   guest ? "bg-primary" : "bg-inputField"
@@ -124,9 +133,9 @@ function ChooseUser({ activeModal, setactiveModal }) {
               </button>
             </div>
           </div>
-        </div>
-      }
-    </SignInCont>
+        }
+      </SignInCont>
+    </Page>
   );
 }
 export default ChooseUser;

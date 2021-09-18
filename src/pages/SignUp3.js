@@ -13,26 +13,33 @@ import InputCheckbox from "../components/Form/InputCheckbox";
 import FormErrorMessage from "../components/Form/FormErrorMessage";
 import Dropdown from "../components/Form/Dropdown";
 import Button from "../components/SignUp/Button";
+import history from "../utils/history";
 
 function SignUp3({ activeModal, setactiveModal }) {
   const [guest, setGuest] = useState(false);
-  const [selected, setSelected] = useState("Select One");
-  const [selected2, setSelected2] = useState("Select One");
-  const [selected3, setSelected3] = useState("Where do you work");
+  const [isActive1, setIsActive1] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
+  const [isActive3, setIsActive3] = useState(false);
+
+  const [selected, setSelected] = useState("");
+  const [selected2, setSelected2] = useState("");
+  const [selected3, setSelected3] = useState("");
 
   const validationSchema = Yup.object({
     acceptedTerms: Yup.boolean()
       .oneOf([true], "Please check to proceed")
       .required("Required"),
   });
-
+  const handleBack = () => {
+    setactiveModal("signUp2");
+  };
   return (
     <SignInCont
       title="Sign Up"
       largeText="Final Questions"
       extraText=""
       setactiveModal={setactiveModal}
-      previousModal="signUp2"
+      backBtnFunction={handleBack}
     >
       <div className="">
         <div className="signUp-content">
@@ -46,7 +53,10 @@ function SignUp3({ activeModal, setactiveModal }) {
             </div>
 
             <MdClose
-              onClick={() => setactiveModal(false)}
+              // onClick={() => setactiveModal(false)}
+              onClick={() => {
+                history.push("./");
+              }}
               className="hidden lg:flex text-primary cursor-pointer  h-8 w-8"
             />
           </div>
@@ -72,13 +82,18 @@ function SignUp3({ activeModal, setactiveModal }) {
                       "Team work",
                       "Other",
                     ]}
+                    isActive1={isActive1}
+                    setIsActive1={setIsActive1}
+                    setIsActive2={setIsActive2}
+                    setIsActive3={setIsActive3}
+                    initial="select one"
                   />
                   <Dropdown
                     name="user"
                     label="I am a:"
                     selected={selected2}
                     setSelected={setSelected2}
-                    initial="Select One"
+                    initial="Select one"
                     options={[
                       "Student",
                       "Teacher",
@@ -89,6 +104,10 @@ function SignUp3({ activeModal, setactiveModal }) {
                       "Team Member",
                       "Other",
                     ]}
+                    isActive1={isActive2}
+                    setIsActive1={setIsActive2}
+                    setIsActive2={setIsActive1}
+                    setIsActive3={setIsActive3}
                   />
                   <Dropdown
                     name="work"
@@ -104,11 +123,14 @@ function SignUp3({ activeModal, setactiveModal }) {
                       "Non-profit",
                       "Other",
                     ]}
+                    isActive1={isActive3}
+                    setIsActive1={setIsActive3}
+                    setIsActive2={setIsActive2}
+                    setIsActive3={setIsActive1}
                   />
                 </div>
 
-          <div className="other-part"
-                >
+                <div className="other-part">
                   <div className="checkboxCont">
                     <InputCheckbox name=" acceptedTerms">
                       I agree to <a href="">terms & conditions</a>

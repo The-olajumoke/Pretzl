@@ -1,13 +1,5 @@
-import React, { useState } from "react";
-import * as Yup from "yup";
-import firstIcon from "../Exports/firstIcon.svg";
-import secondIcon from "../Exports/secondIcon.svg";
-import whiteicon from "../Exports/whiteicon.svg";
-import { MdClose } from "react-icons/md";
-import { FiArrowRight } from "react-icons/fi";
-import SignInCont from "../components/SignInCont";
-import { Form, Formik } from "formik";
-import CustomField from "../components/Form/CustomInput";
+import React from "react";
+
 import ChooseUser from "./ChooseUser";
 import LogInGuest from "./LogInGuest";
 import LogInUser from "./LogInUser";

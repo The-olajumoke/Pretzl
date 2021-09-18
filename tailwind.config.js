@@ -22,6 +22,7 @@ module.exports = {
         99: "99%",
       },
       screens: {
+        mediumForHiddenBtn:"815px",
         desktop: "1280px",
         extralarge: "1920px",
       },
