@@ -49,6 +49,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  
 }
 
 .form-button {
@@ -108,10 +109,12 @@
 }
 .form-button {
   padding: 17px 110px;
+   margin-top: 20px;
+   margin-bottom: 0;
+
 }
 
-@media (max-width: 1060px) {
-}
+
 @media (max-width: 815px) {
   .logInUser-content {
     margin: 0 0 0 0;
