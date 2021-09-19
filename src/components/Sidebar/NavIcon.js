@@ -1,10 +1,11 @@
 import React from "react";
 import "../../Styling/BodyWrapper.css";
-function NavIcon({ icon }) {
+function NavIcon({ icon, className}) {
+  console.log(icon.type);
   return (
-    <div className="nav-icon">
-      <img className="" src={icon} alt="" />
-    </div>
+    <div className={className}>
+  {icon}
+  </div>
   );
 }
 

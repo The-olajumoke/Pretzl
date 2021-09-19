@@ -87,6 +87,19 @@
   background: white;
 }
 
+@media (min-width:1500px) {
+  .logInUser-content{
+  margin: 0px 55px 40px 55px;
+    width:80% ;
+
+  }
+  .log-form{
+    width: 100%;
+  }
+  .form-cont{
+    width: 100%;
+  }
+}
 @media (max-width: 1440px) {
   /* .logInUser-content {
     margin: 120px 0px 20px 67px;

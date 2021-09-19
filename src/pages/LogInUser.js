@@ -28,9 +28,9 @@ function LogInUser({ activeModal, setactiveModal }) {
         setactiveModal={setactiveModal}
         backBtnFunction={handleBack}
       >
-        <div className="h-full w-full">
+       
           <div className="logInUser-content ">
-            <div className="flex  justify-between mb-8 ml-0">
+            <div className="flex  justify-between mb-8 ml-0 ">
               <div
                 // onClick={() => setactiveModal("false")}
                 onClick={()=>{history.push('./')}}
@@ -99,7 +99,6 @@ function LogInUser({ activeModal, setactiveModal }) {
             </Formik>
             {/* button */}
           </div>
-        </div>
       </SignInCont>
     </Page>
   );

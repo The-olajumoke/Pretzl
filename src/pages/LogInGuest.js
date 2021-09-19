@@ -26,7 +26,6 @@ const handleBack = () => {
         setactiveModal={setactiveModal}
         backBtnFunction={handleBack}
       >
-        <div className=" h-full">
           <div className="logInUser-content">
             <div className="flex  justify-between mb-8 ml-0">
               <div
@@ -101,7 +100,6 @@ const handleBack = () => {
             </Formik>
             {/* button */}
           </div>
-        </div>
       </SignInCont>
     </Page>
   );

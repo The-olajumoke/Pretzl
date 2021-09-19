@@ -37,6 +37,18 @@ display: block;
 .input-box:focus {
   color: #011b25;
 }
+@media (min-width:1500px) {
+  .input-container{
+    height:auto;
+    width: 100%;
+  }
+.input-box{
+  height: 64px;
+    width: 100%;
+
+}
+  
+}
 @media (max-width: 1060px) {
    .input-box {
     width: 100%;

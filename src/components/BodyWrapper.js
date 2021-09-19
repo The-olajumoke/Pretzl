@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import SideHeading from "./Sidebar/sideHeading";
 import toggleBtnOpen from "../Exports/Toggle.svg";
+// import "../Styling/BodyWrapper.css"
 
-import toggleBtnClosed from "../Exports/inso 4.svg"
+import toggleBtnClosed from "../Exports/Hamburger.svg"
 function BodyWrapper({ children }) {
   const [navSize, setNavSize] = useState("large");
   const [bodySize, setBodySize] = useState("mid");
@@ -12,15 +13,15 @@ function BodyWrapper({ children }) {
   const handleClick = () => {
       console.log("clicked");
     if (navSize == "small") {
+      setNewIcon(toggleBtnOpen);
       setNavSize("large");
       setBodySize("mid");
-      setNewIcon(toggleBtnOpen);
 
 
     } else {
+      setNewIcon(toggleBtnClosed);
       setNavSize("small");
       setBodySize("full");
-      setNewIcon(toggleBtnClosed);
 // 
     }
   };

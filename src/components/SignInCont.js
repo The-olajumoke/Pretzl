@@ -9,7 +9,7 @@ function SignInCont({
   title,
   largeText,
   extraText,
-backBtnFunction,
+  backBtnFunction,
 }) {
   return (
     <div className=" main-container  font-Poppins">
@@ -18,7 +18,7 @@ backBtnFunction,
         <div className="mediumForHiddenBtn:hidden flex  text-primary h-auto items-center justify-between text-base sm:text-xl mb-4 py-2  w-full ">
           <FiArrowLeft
             // onClick={}
-        onClick={backBtnFunction}
+            onClick={backBtnFunction}
             className="backIconsm"
           />
           <h1 className=" text-textBody">{title}</h1>
@@ -34,7 +34,7 @@ backBtnFunction,
         <div className="left-container bg-primary ">
           <h4 className="title ">{title}</h4>
 
-          <h1 className=" largeText">{largeText}</h1>
+          <h1 className="largeText">{largeText}</h1>
           {extraText ? (
             <h5 className="extraText ">{extraText}</h5>
           ) : (

@@ -8,6 +8,7 @@ const InputCheckbox=({ children, ...props }) => {
 
     return (
       <label className="mb-3 flex items-center text-primary">
+       
         <Field
           type="checkbox"
           name={name}

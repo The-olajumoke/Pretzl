@@ -6,12 +6,14 @@ import ChooseUser from "./pages/ChooseUser";
 import LogInUser from "./pages/LogInUser";
 import LogInGuest from "./pages/LogInGuest";
 import SignUpModal from "./pages/SignUpModal";
+import Overview from "./pages/Overview";
 const App = () => {
   return (
     <Router history={history}>
       <Switch>
         <Route exact path="/">
           <Landing />
+          {/* <Overview/> */}
         </Route>
         <Route exact path="/sign-up">
           {/* <SignUp1/> */}

@@ -87,6 +87,12 @@
 .btn-Cont {
   height: 371px;
 }
+@media (min-width:1500px) {
+.main-content{
+    margin: 0px 125px 40px 50px;
+width: 80%;
+}
+}
 @media (max-width: 1440px) {
   .main-content {
     margin: 0px 122px 40px 50px;
