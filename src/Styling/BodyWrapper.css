@@ -1,71 +1,51 @@
-.body-wrapper{
-  width: 50vw;
+.body-wrapper {
+  border: red dashed 2px;
+  width: 98%;
+  /* height: 300px; */
+  /* max-height: 100vh; */
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
-
-
+.secondCont {
+  flex: 1;
+  height: 100%;
+  background: #fafafa;
+}
+.secondContItem {
+  padding: 40px 70px 22px 40px;
+  background-color: lemonchiffon;
+  overflow-y: scroll;
+}
 /* HEADER */
 .sideHeading {
   flex-direction: row;
   align-items: center;
-  padding: 15px 48px 15px 49px;
-  position: absolute;
-  width: 1440px;
+  /* padding: 15px 48px 15px 48px; */
+  /* position: absolute; */
+  width: 100%;
   height: 75px;
   background: #ffffff;
+  /* border: 1px lime solid; */
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  z-index: 50;
 }
 .sideHeading-logoCont {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 285px;
-  border: rebeccapurple 2px dashed;
+
   height: 100%;
 }
 .toggleBtn {
   width: 40px;
   height: 40px;
-  border: rebeccapurple 2px dashed;
 }
 .heading-logo {
   width: 119.49px;
   height: 60.87px;
   margin: 0px 56px;
-}
-
-
-/* ///////NAV BAR//// */
-.navItem {
-  padding: 26px 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border: rebeccapurple 0.5px solid;
-  margin:2px 0;
-  width: 100%;
-}
-
-.navItem:active .nav-icon{
-  color: red;
-}
-.nav-icon {
-  /* margin: 0 15px; */
-  width: 24px;
-  height: 24px;
-  border: 1px solid rebeccapurple;
-  color: #07A098;
-  font-size:24px;
-}
-.nav-text {
-  border: 1px solid rebeccapurple;
-  /* width: 92px; */
-  width: auto;
-  height: 30px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  color: #686868;
 }

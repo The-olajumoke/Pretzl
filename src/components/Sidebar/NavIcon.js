@@ -3,7 +3,7 @@ import "../../Styling/BodyWrapper.css";
 function NavIcon({ icon, className}) {
   console.log(icon.type);
   return (
-    <div className={className}>
+    <div className={`${className}`}>
   {icon}
   </div>
   );

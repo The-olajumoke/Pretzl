@@ -7,13 +7,15 @@ import LogInUser from "./pages/LogInUser";
 import LogInGuest from "./pages/LogInGuest";
 import SignUpModal from "./pages/SignUpModal";
 import Overview from "./pages/Overview";
+import ActivityChart from "./components/ActivityChart";
 const App = () => {
   return (
     <Router history={history}>
       <Switch>
         <Route exact path="/">
           <Landing />
-          {/* <Overview/> */}
+          {/* <Overview /> */}
+          {/* <ActivityChart /> */}
         </Route>
         <Route exact path="/sign-up">
           {/* <SignUp1/> */}
@@ -23,7 +25,7 @@ const App = () => {
         <Route exact path="/sign-as-user">
           {/* <SignUp1/> */}
           {/* <SignUp1 /> */}
-          <SignUpModal/>
+          <SignUpModal />
         </Route>
 
         <Route exact path="/sign-as-guest">

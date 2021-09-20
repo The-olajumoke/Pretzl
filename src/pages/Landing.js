@@ -50,7 +50,7 @@ const Landing = () => {
         </div>
         <div className="mockupCont relative flex justify-evenly items-center w-full m-0 mr-0  h-96  lg:w-1/2  sm:w-2/5 md:w-1/2  sm:h-full overflow-hidden sm:overscroll-none">
           <img
-            className="  lg:w-4/5 extralarge:  w-3/5 transform translate-x-24 sm:translate-x-0  sm:ml-9"
+            className=" lg:w-4/5 extralarge:  w-3/5 transform translate-x-24 sm:translate-x-0  sm:ml-9"
             // style={{ height: "600px", width: "600px" }}
             src={landingCircle}
             alt=""
