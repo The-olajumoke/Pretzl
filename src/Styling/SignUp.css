@@ -1,44 +1,51 @@
 .signUp-content {
-  padding-top: 30px;
   height: 100%;
-  margin: 0px 55px 0px 40px;
-
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding-top: 30px;
 }
 
 .sign-form,
 .sign-form3 {
   width: 100%;
-  height: 600px;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  padding: 20px 0;
 
-}
-.sign-form3 {
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0;
 }
 
 .frame {
   width: 100%;
-  height: 434px;
-
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
 }
 .frame-3 {
   width: 100%;
-
-  height: 358px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .btn-holder {
   width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .other-part {
   width: 100%;
-  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:40%;
+
 }
 
 .checkbox {
@@ -52,72 +59,37 @@
   cursor: pointer;
   outline: none;
 }
-.checkbox:checked{
-    content: '';
- 
-    background:#07A098;
-    width: 17px;
-    height: 17px;
-    box-shadow: 
-      2px 0 0 white,
-      4px 0 0 white,
-      4px -2px 0 white,
-      4px -4px 0 white,
-      4px -6px 0 white,
-      4px -8px 0 white;
-    transform: rotate(45deg);
-}
-@media (min-width:1800px) {
-  .sign-form,.sign-form3{
-    height: 700px;
-  }
-  
-}
-@media (min-width: 1500px) {
-  .sign-form,
-  .sign-form3 {
-    
-    justify-content: space-between;
-  }
-  .btn-holder {
-    display: flex;
-    height: auto;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .signUp-content{
-    width: 80%;
-  }
-  .frame{
-    height: auto;
-  }
+.checkbox:checked {
+  content: "";
 
+  background: #07a098;
+  width: 17px;
+  height: 17px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+    4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
 }
-@media (max-width: 1440px) {
-  .signUp-content {
-    margin: 0px 55px 0px 40px;
-    height: 100%;
+@media (max-width: 2500px) {
+  .frame, .frame-3 {
+    height: auto;
   }
 }
 @media (max-width: 1060px) {
   .sign-form,
   .sign-form3 {
-    width: 100%;
     align-items: center;
-
-    height: auto;
   }
   .signUp-content {
-    /* margin: 30px 55px 20px 40px; */
     padding-top: 30px;
+    width: 90%;
   }
   .frame {
     width: 100%;
+    padding: 0;
   }
 }
 
-@media (max-width: 515px) {
+@media (max-width: 575px) {
   .sign-form,
   .sign-form3 {
     width: 100%;
@@ -125,7 +97,6 @@
     height: auto;
   }
   .signUp-content {
-    margin: 30px 0 0 0;
     padding: 0;
     width: 100%;
   }

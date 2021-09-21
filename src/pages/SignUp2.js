@@ -46,7 +46,7 @@ few more details"
         <div className="desktopCancel mb-8 ml-0">
           <div
             onClick={() => setactiveModal("signUp1")}
-            className="backBtn flex "
+            className="backBtn flex items-center "
           >
             <FiArrowLeft className=" backIcon cursor-pointer" />
             <h3>Back</h3>

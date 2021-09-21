@@ -1,9 +1,10 @@
 .input-container {
   width: 100%;
-  height: 101px;
+  /* height: 101px; */
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 label {
   font-style: normal;
@@ -17,7 +18,7 @@ label {
 }
 .input-box {
   width: 100%;
-  height: 64px;
+  /* height: 64px; */
   border: 1px solid #0eb4f6;
   box-sizing: border-box;
   border-radius: 6px;
@@ -27,55 +28,44 @@ label {
   font-size: 16px;
   line-height: 24px;
   background: none !important;
-display: block;
+  display: block;
   display: flex;
   align-items: center;
-
+  max-height: 75px;
   color: rgba(0, 30, 47, 0.4);
-  padding: 20px 34px;
+  padding: 15px 34px;
 }
 .input-box:focus {
   color: #011b25;
 }
-@media (min-width:1500px) {
-  .input-container{
-    height:auto;
-    width: 100%;
+@media (min-width: 1500px) {
+  .input-box {
+    /* height: 55px */
   }
-.input-box{
-  height: 64px;
-    width: 100%;
-
-}
-  
 }
 @media (max-width: 1060px) {
-   .input-box {
+  .input-box {
     width: 100%;
-    
   }
   .input-container {
-  width: 100%;
-
-}
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
-     .input-box {
+  .input-box {
     width: 100%;
     padding: 16.5 15px;
-    
   }
   .input-container {
-  width: 100%;
-
-}
+    width: 100%;
+  }
 }
 @media (max-width: 504px) {
-   label{
-      font-size: 14px;
-line-height: 21px;
+  label {
+    font-size: 14px;
+    line-height: 21px;
   }
-  .input-box{
+  .input-box {
     font-size: 14px;
     padding: 16px 15px;
   }

@@ -44,12 +44,12 @@ const handleBack = () => {
       backBtnFunction={handleBack}
     >
       <div className="signUp-content">
-        <div className="desktopCancel mb-8  ml-0">
+        <div className="desktopCancel ml-0">
           <div
             onClick={() => {
               history.push("./sign-up");
             }}
-            className="backBtn flex"
+            className="backBtn flex items-center"
           >
             <FiArrowLeft className="backIcon cursor-pointer" />
             <h3>Back</h3>

@@ -27,13 +27,13 @@ const handleBack = () => {
         backBtnFunction={handleBack}
       >
           <div className="logInUser-content">
-            <div className="flex  justify-between mb-8 ml-0">
+            <div className="flex  justify-between mb-8 ml-0 desktopCancel">
               <div
                 // onClick={() => setactiveModal("chooseUser")}
                 onClick={() => {
                   history.push("/sign-up");
                 }}
-                className="backBtn hidden lg:flex cursor-pointer  "
+                className="backBtn flex cursor-pointer items-center  "
               >
                 <FiArrowLeft className=" backIcon" />
                 <h3>Back</h3>
@@ -43,7 +43,7 @@ const handleBack = () => {
                 onClick={() => {
                   history.push("./");
                 }}
-                className="hidden lg:flex text-primary cursor-pointer  h-8 w-8"
+                className="text-primary cursor-pointer  h-8 w-8"
               />
             </div>
             <Formik
@@ -88,7 +88,7 @@ const handleBack = () => {
                       <h3 className="">If you don't have an account,</h3>
 
                       <button
-                        onClick={() => setactiveModal("chooseUser")}
+                        onClick={() => history.push("./sign-as-user")}
                         className=" text-primary"
                       >
                         Sign up

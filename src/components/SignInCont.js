@@ -36,7 +36,7 @@ function SignInCont({
 
           <h1 className="largeText">{largeText}</h1>
           {extraText ? (
-            <h5 className="extraText ">{extraText}</h5>
+            <h5 className=" extraText ">{extraText}</h5>
           ) : (
             <h5 className=""></h5>
           )}
