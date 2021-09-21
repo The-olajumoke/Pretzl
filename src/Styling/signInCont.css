@@ -166,7 +166,7 @@
 
   .sub-container {
     flex-direction: column;
-    height: auto;
+    height:100vh;
     border-radius: 0;
     display: flex;
     align-items: center;
