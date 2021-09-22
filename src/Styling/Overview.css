@@ -1,50 +1,133 @@
-.overviewCont{
-    /* margin: 40px 70px 22px 40px; */
-    background-color: lime;
-    height:100%;
-    /* height: 100%; */
+.overviewCont {
+  /* margin: 40px 70px 22px 40px; */
+  background-color: lime;
+  height: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.courses-overview{
-    color: #FFFFFF;
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 16px 38px;
-height: 109px;
-background: #07A098;
-border-radius: 10px;
+.courses-overview {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 38px;
+  height: 109px;
+  background: #07a098;
+  border-radius: 10px;
 }
-.course-item{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-width: 76.72px;
-height: 74px;
+.course-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 76.72px;
+  height: 74px;
 }
-.course-item h4{
-    font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 27px;
+.course-item h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
 
-display: flex;
-align-items: center;
-width: 78.94px;
-height: 27px;
+  display: flex;
+  align-items: center;
+  width: 78.94px;
+  height: 27px;
 }
-.course-item h2{
-    width: 37px;
-height: 45px;
-left: 0px;
-top: 29px;
+.course-item h2 {
+  width: 37px;
+  height: 45px;
+  left: 0px;
+  top: 29px;
 
-font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 45px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* SECOND SECTION */
+
+.TopDisCont {
+  height: 278px;
+  width: 100%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(87, 51, 51);
+}
+
+.TopDis {
+  width: 68.5%;
+  border: 1px solid red;
+  padding: 16px 101px 16px 38px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.TopDis h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #07a098;
+}
+
+.TopDiscusionText {
+  border: 1px solid rgba(7, 160, 152, 0.05);
+  padding: 10px 0;
+}
+.TopDiscusionText h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: flex-end;
+  color: #686868;
+}
+.TopDiscusionText h5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: flex-end;
+  color: #07a098;
+}
+
+.EngRate {
+  width: 30%;
+  background-color: rgb(87, 51, 51);
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 13px 0 0 16px;
+
+  border: 1px solid orange;
+}
+.EngRate h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #07a098;
+}
+.EngRate h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #9d9d9d;
 }

@@ -1,9 +1,10 @@
 .overlay {
-  height: 100vh;
-  padding: 0 50px;
+  height:auto;
+  padding: 0 50px 10px;
 
 }
 .overlay::after {
+  background-color: white;
   background-color: white;
   opacity: 0.8;
   content: "";
@@ -14,19 +15,14 @@
   top: 0;
 }
 .main-container {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 600;
   width: 100%;
-  height: 100vh;
-  overflow: scroll;
+  height: 100%;
 }
 .sub-container {
   /* width: 1050px; */
@@ -58,6 +54,7 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 0 auto;
+  z-index: 800;
 }
 .title {
   font-style: normal;
