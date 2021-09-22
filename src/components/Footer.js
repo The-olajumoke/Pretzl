@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <div className="bg-footer py-5 px-10 flex flex-col justify-between  w-full h-auto leading-relaxed">
-      <ul className="flex flex-col text-center  sm:flex-row w-full md:w-2/5 mb-3 justify-between text-textBody text-base">
+      <ul className="flex flex-col text-center  sm:flex-row w-full md:w-1/2 mb-3 justify-between text-textBody text-base">
         {/* <li className="mb-2 sm:mb-0">
           <NavLink activeClassName="activeLink" to="/about">
             ABOUT
