@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import "../Styling/SignUp.css";
 import { Link } from "react-router-dom";
-
 import { FiArrowLeft } from "react-icons/fi";
-
 import { MdClose } from "react-icons/md";
 import SignInCont from "../components/SignInCont";
-
 import { Form, Formik } from "formik";
 import InputCheckbox from "../components/Form/InputCheckbox";
 import FormErrorMessage from "../components/Form/FormErrorMessage";
