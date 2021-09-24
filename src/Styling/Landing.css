@@ -1,3 +1,14 @@
+.maintext{
+  font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 84px;
+
+align-items: center;
+
+
+color: #011B25;
+}
 .landingImg {
   width: 139.7px;
   height: 71.17px;
