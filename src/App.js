@@ -9,6 +9,7 @@ import SignUpModal from "./pages/SignUpModal";
 import Analytics from "./pages/Analytics";
 import Notification from "./pages/Notification";
 import Discussion from "./pages/Discussion.jsx";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -52,7 +53,7 @@ const App = () => {
           <Analytics />
         </Route>
         <Route exact path="/contact">
-          <Analytics />
+          <Contact/>
         </Route>
         <Route exact path="/settings">
           <Analytics />

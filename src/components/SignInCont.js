@@ -13,9 +13,10 @@ function SignInCont({
 }) {
   return (
     <div className=" main-container  font-Poppins">
-      <div className="sub-container  text-white bg-white ">
+      <div className="sub-container  text-white bg-white  ">
         {/* RESPONSIVE CLOSEBUTTON */}
-        <div className="mediumForHiddenBtn:hidden flex  text-primary h-auto items-center justify-between text-base sm:text-xl mb-4 py-2  w-full ">
+        <div className="topControl  text-primary h-auto items-center justify-between text-base sm:text-xl mb-4 py-2  w-full">
+        {/* <div className="mediumForHiddenBtn:hidden flex  text-primary h-auto items-center justify-between text-base sm:text-xl mb-4 py-2  w-full "> */}
           <FiArrowLeft
             // onClick={}
             onClick={backBtnFunction}

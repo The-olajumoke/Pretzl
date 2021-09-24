@@ -1,0 +1,26 @@
+.contactMain{
+     padding: 45px 50px 10px 50px;
+}
+.contactCont{
+    width: 50%;
+    padding-right: 10px;
+    border:rebeccapurple 1px solid;
+}
+.contactCont h3{
+    font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+display: flex;
+align-items: center;
+color: #07A098;
+}
+.contactCont h4{
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+color: #686868;
+}

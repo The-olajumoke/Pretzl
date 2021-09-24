@@ -21,7 +21,7 @@ function Sidebar({ navSize, setNavSize }) {
     >
       {/* <svg data-testid="DeleteIcon"></svg> */}
       <div
-        className={`userDetailsCont    ${
+        className={`userDetailsCont     ${
           navSize == "small" ? "justify-end" : "justify-center"
         }    ${navSize == "small" ? "pr-3" : ""}  `}
       >
