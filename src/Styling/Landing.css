@@ -3,11 +3,19 @@
 font-weight: 500;
 font-size: 56px;
 line-height: 84px;
-
 align-items: center;
-
-
 color: #011B25;
+margin-bottom:10px;
+}
+.subText{
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 151.5%;
+display: flex;
+align-items: center;
+color: #686868;
+
 }
 .landingImg {
   width: 139.7px;
@@ -22,9 +30,59 @@ height: 44px;
     color: white;
     
 }
-@media (max-width: "815px") {
+@media (max-width:1380px) {
+.maintext{
+  font-size: 43px;
+}
+.subText{
+font-size: 18px;
+}
+}
+@media (max-width:1068px) {
+.maintext{
+  font-size: 40px;
+line-height: 55px;
+
+}
+.subText{
+font-size: 15px;
+}
+}
+@media (max-width:815px) {
+.maintext{
+  font-size: 30px;
+line-height: 50px;
+
+}
+.subText{
+  width: 70%;
+}
+}
+@media (max-width:515px) {
   .landingImg {
     width: 87.1px;
     height: 40.84px;
   }
+  .maintext{
+    font-style: normal;
+font-weight: 500;
+font-size: 30px;
+color: red;
+line-height: 45px;
+align-items: center;
+color: #011B25;
+margin-bottom: 10px;
+  }
+  .subText{
+font-style: normal;
+font-weight: normal;
+font-size: 13.19px;
+line-height: 20px;
+display: flex;
+align-items: center;
+color: #686868;
+width: 90%;
+
+  }
 }
+

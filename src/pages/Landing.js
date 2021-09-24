@@ -15,12 +15,12 @@ const Landing = () => {
       <Header />
       <div className="p-0 mb-28  px-0 sm:pl-6 flex flex-col sm:flex-row items-center mt-8 sm:mt-0 extralarge:mt-10 justify-between  w-full  sm:w-full">
         <div className="sm:w-1/2 w-11/12  p-0 sm:px-4 ">
-          <div className="w-full md:5/6 lg:w-4/5  mb-4">
+          <div className=" w-full md:5/6 lg:w-4/5  mb-4">
             <div className=" maintext">
               <h1>Share ideas,</h1>
               <h1> discover meaning.</h1>
             </div>
-            <h4 className="lg:pl-0.5 w-4/5 md:5/6 text-md md:text-base leading-relaxed sm:leading-8 font-medium sm:font-normal text-textBody ">
+            <h4 className=" subText ">
               Education, presentations, collaboration. Engage, interact, and
               create ideas together.
             </h4>
