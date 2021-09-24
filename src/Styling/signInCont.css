@@ -5,7 +5,6 @@
 }
 .overlay::after {
   background-color: white;
-  background-color: white;
   opacity: 0.8;
   content: "";
   position: absolute;
@@ -55,6 +54,8 @@
   border-bottom-right-radius: 20px;
   padding: 0 auto;
   z-index: 800;
+  background-color: #FFF;
+
 }
 .title {
   font-style: normal;

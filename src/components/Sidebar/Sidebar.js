@@ -21,7 +21,7 @@ function Sidebar({ navSize, setNavSize }) {
     >
       {/* <svg data-testid="DeleteIcon"></svg> */}
       <div
-        className={`userDetailsCont ring   ${
+        className={`userDetailsCont    ${
           navSize == "small" ? "justify-end" : "justify-center"
         }    ${navSize == "small" ? "pr-3" : ""}  `}
       >
@@ -32,24 +32,25 @@ function Sidebar({ navSize, setNavSize }) {
         </div>
       </div>
 
-      <div className="ring allNavItems">
+      <div className=" allNavItems">
         <NavItem
           navSize={navSize}
           title="Discussions"
           icon={<MdChatBubbleOutline />}
-          path="./discussion"
+          path="/discussion"
+          active
         />
         <NavItem
           navSize={navSize}
           title="Nofications"
           icon={<IoMdNotificationsOutline />}
-          path="./notifications"
+          path="/notifications"
         />
         <NavItem
           navSize={navSize}
-          title="Overview"
+          title="Analytics"
           icon={<MdChatBubbleOutline />}
-          path="./overview"
+          path="/analytics"
           active
         />
 
@@ -57,30 +58,35 @@ function Sidebar({ navSize, setNavSize }) {
           navSize={navSize}
           title="Charts "
           icon={<FiBarChart />}
-          path="./charts"
+          path="/charts"
         />
         <NavItem
           navSize={navSize}
           title="Calendar"
           icon={<FaRegCalendar />}
-          path="./calendar"
+          path="/calendar"
         />
         <NavItem
           navSize={navSize}
-          title="Reports"
+          title="Grades"
           icon={<MdShowChart />}
-          path="./reports"
+          path="/grades"
         />
-        <NavItem navSize={navSize} title="Contact us" icon={<MdHeadsetMic />} />
+        <NavItem
+          navSize={navSize}
+          title="Contact us"
+          icon={<MdHeadsetMic />}
+          path="/contact"
+        />
         <NavItem
           navSize={navSize}
           title="Settings"
           icon={<IoSettingsOutline />}
-          path="./settings"
+          path="/settings"
         />
       </div>
       <div
-        className={`ring  my-14  w-full flex  
+        className={`my-14  w-full flex  
          ${navSize == "small" ? "" : "px-12"}
             ${navSize == "small" ? "pr-3" : ""}
     ${navSize == "small" ? "justify-end" : "justify-items-start"}`}

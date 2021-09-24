@@ -1,16 +1,19 @@
 import React from "react";
 import BodyWrapper from "../components/BodyWrapper";
-import TopDiscusionText from "../components/OverView/TopDiscusionText";
-import "../Styling/Overview.css"
+import TopDiscusionText from "../components/Analytics/TopDiscusionText";
+import "../Styling/Analytics.css"
 import OverviewImg from "../Exports/dashboard/Pie Circular@2x.png"
 function Overview() {
   return (
     <BodyWrapper>
+
+      <div className="bg-primary overMain">
+      
       <div className=" overviewCont ring ring-red">
         {/* first section */}
         {/*Courses  */}
-        <div className="courses-overview ring ring-red">
-          <div className="w-1/2 flex justify-between ring">
+        <div className="courses-overview">
+          <div className="w-1/2 flex justify-between ">
             <div className="course-item">
               <h4>Courses</h4>
               <h2>14</h2>
@@ -28,13 +31,13 @@ function Overview() {
 
         {/* SECOND SECTION */}
         {/*Discussions*/}
-        <div className="ring "></div>
+        <div className=" "></div>
         {/* THIRD SECTION */}
         {/*Thread*/}
         <div className="TopDisCont">
           <div className="TopDis">
             <h3>Top </h3>
-            <div className="ring">
+            <div className="">
               <TopDiscusionText
                 topic="The Economics of Democracy."
                 category="Economics & Politics"
@@ -48,9 +51,12 @@ function Overview() {
           <div className="EngRate">
             <h2>Engagement Rate</h2>
             <h4>State on how well a post is doing.</h4>
-            <img src={OverviewImg} alt="" />
+            <div className="flex justify-center ">
+              <img src={OverviewImg} alt="" />
+            </div>
           </div>
         </div>
+      </div>
       </div>
     </BodyWrapper>
   );

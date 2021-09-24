@@ -6,37 +6,57 @@ import ChooseUser from "./pages/ChooseUser";
 import LogInUser from "./pages/LogInUser";
 import LogInGuest from "./pages/LogInGuest";
 import SignUpModal from "./pages/SignUpModal";
-import Overview from "./pages/Overview";
-import ActivityChart from "./components/ActivityChart";
+import Analytics from "./pages/Analytics";
+import Notification from "./pages/Notification";
+import Discussion from "./pages/Discussion.jsx";
+
 const App = () => {
   return (
     <Router history={history}>
       <Switch>
         <Route exact path="/">
           <Landing />
-          {/* <Overview /> */}
-          {/* <ActivityChart /> */}
+          {/* <Notification /> */}
         </Route>
         <Route exact path="/sign-up">
-          {/* <SignUp1/> */}
           <ChooseUser />
         </Route>
 
         <Route exact path="/sign-as-user">
-          {/* <SignUp1/> */}
-          {/* <SignUp1 /> */}
           <SignUpModal />
         </Route>
 
         <Route exact path="/sign-as-guest">
-          {/* <SignUp1/> */}
           <LogInGuest />
         </Route>
 
         <Route exact path="/log-in">
           <LogInUser />
         </Route>
-        <Route exact path="/overview"></Route>
+        <Route exact path="/discussion">
+          <Discussion/>
+          </Route>
+        <Route exact path="/notifications">
+          <Notification />
+        </Route>
+        <Route exact path="/analytics">
+          <Analytics />
+        </Route>
+        <Route exact path="/charts">
+          <Analytics />
+        </Route>
+        <Route exact path="/calendar">
+          <Analytics />
+        </Route>
+        <Route exact path="/grades">
+          <Analytics />
+        </Route>
+        <Route exact path="/contact">
+          <Analytics />
+        </Route>
+        <Route exact path="/settings">
+          <Analytics />
+        </Route>
       </Switch>
     </Router>
   );

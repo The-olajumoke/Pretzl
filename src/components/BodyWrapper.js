@@ -24,7 +24,7 @@ function BodyWrapper({ children }) {
     }
   };
   return (
-    <div className="body-wrapper  font-Poppins">
+    <div className="body-wrapper font-Poppins">
       <SideHeading
         navSize={navSize}
         setNavSize={setNavSize}
@@ -32,12 +32,10 @@ function BodyWrapper({ children }) {
         icon={newIcon}
         setNewIcon={setNewIcon}
       />
-      <div className=" secondCont flex  ring ring-primary">
+      <div className=" secondCont flex">
         <Sidebar navSize={navSize} setNavSize={setNavSize} />
         {/* {Children} */}
-        <div className="secondContItem h-full ring ring-red  w-full">
-          {children}
-        </div>
+        <div className={`secondContItem  w-full`}>{children}</div>
       </div>
     </div>
   );

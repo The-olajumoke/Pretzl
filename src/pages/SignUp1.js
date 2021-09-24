@@ -111,7 +111,7 @@ const handleBack = () => {
                 <div className=" account-text">
                   <h3 className="">Already have an account?</h3>
                   <button
-                    onClick={() => setactiveModal("logInUser")}
+                    onClick={() => history.push('./log-in')}
                     className="text-primary"
                   >
                     Log in

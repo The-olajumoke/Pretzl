@@ -1,8 +1,12 @@
-.overviewCont {
-  /* margin: 40px 70px 22px 40px; */
-  background-color: lime;
+.overMain {
+  padding: 40px 50px 10px 41px;
+  width: 100%;
   height: 100%;
-  /* height: 100%; */
+  background: #fafafa;
+}
+
+.overviewCont {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,15 +61,12 @@
 .TopDisCont {
   height: 278px;
   width: 100%;
-  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(87, 51, 51);
 }
 
 .TopDis {
   width: 68.5%;
-  border: 1px solid red;
   padding: 16px 101px 16px 38px;
   background: #ffffff;
   border-radius: 15px;
@@ -110,8 +111,9 @@
   background: #ffffff;
   border-radius: 15px;
   padding: 13px 0 0 16px;
-
-  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:space-evenly; */
 }
 .EngRate h2 {
   font-style: normal;
@@ -130,4 +132,7 @@
   display: flex;
   align-items: center;
   color: #9d9d9d;
+}
+.EngRate img {
+  width: 50%;
 }
