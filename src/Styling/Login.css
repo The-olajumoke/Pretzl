@@ -77,9 +77,12 @@
   color: #686868;
   justify-content: center;
 }
+
+
+
 .account-text button {
-  margin: 0 10px;
-  background: white;
+  margin: 0 4px;
+  color: #07a098;
 }
 
 @media (min-width: 1500px) {

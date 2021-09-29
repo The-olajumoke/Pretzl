@@ -1,9 +1,10 @@
-import { Field, field } from "formik";
+import { Field } from "formik";
 import '../../Styling/CustomInput.css'
 const Input = ({ name, type, placeholder }) => {
   return (
     <Field
       className=" input-box outline-none"
+      
       name={name}
       type={type}
       placeholder={placeholder}

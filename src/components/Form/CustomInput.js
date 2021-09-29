@@ -8,7 +8,7 @@ export const CustomField = (props) => {
   const { name, label, req } = props;
   return (
     <div className=" input-container">
-      <label className="label " htmlFor="name">
+      <label  className="label " htmlFor="name">
         {label}
         {req ? (
           <span className=" text-btnText">{req}</span>
@@ -16,7 +16,7 @@ export const CustomField = (props) => {
           <span style={{ color: "red" }}>*</span>
         )}
       </label>
-      <Input {...props} />
+      <Input  {...props} />
       <FormErrorMessage name={name} />
     </div>
   );

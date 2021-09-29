@@ -16,8 +16,13 @@ function SignUp2({ activeModal, setactiveModal }) {
       .email("invalid email address")
       .required("Required"),
     password: Yup.string()
-      .min(6, "Must be at least 6 characters")
-      .required("Required"),
+      .min(8, "Must be at least 8 characters")
+      .required("Required")
+      .matches(
+        /^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{8,}$/,
+        "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
+      ),
+
     repeatPassword: Yup.string()
       .oneOf([Yup.ref("password"), null], "Passwords must match")
       .required("Required"),

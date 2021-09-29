@@ -68,7 +68,7 @@ function ChooseUser({ activeModal, setactiveModal }) {
                     user ? "text-white" : "text-desc"
                   }`}
                 >
-                  Create an Account to begin. Log in if you have one already
+                  Create an account to begin. Log in if you have one already.
                 </h5>
               </div>
 

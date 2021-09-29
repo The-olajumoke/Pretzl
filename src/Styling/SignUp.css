@@ -39,6 +39,7 @@
   flex-direction: column;
   justify-content: flex-end;
 }
+
 .other-part {
   width: 100%;
   display: flex;

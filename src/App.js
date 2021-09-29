@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 const App = () => {
   return (
     <Router history={history}>
+      {/* alert(JSON.stringify(values, null, 2)); */}
       <Switch>
         <Route exact path="/">
           <Landing />
@@ -35,8 +36,8 @@ const App = () => {
           <LogInUser />
         </Route>
         <Route exact path="/discussion">
-          <Discussion/>
-          </Route>
+          <Discussion />
+        </Route>
         <Route exact path="/notifications">
           <Notification />
         </Route>
@@ -53,7 +54,7 @@ const App = () => {
           <Analytics />
         </Route>
         <Route exact path="/contact">
-          <Contact/>
+          <Contact />
         </Route>
         <Route exact path="/settings">
           <Analytics />
