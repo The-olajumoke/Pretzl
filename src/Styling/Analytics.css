@@ -4,22 +4,32 @@
   height: 100%;
   background: #fafafa;
 }
-
 .overviewCont {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  overflow-y: scroll;
+  /* border: 2px solid blue; */
+}
+.overviewCont::-webkit-scrollbar{
+  display: none;
 }
 .courses-overview {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 38px;
-  height: 109px;
+  padding: 16px 35px;
+  height: 100px;
   background: #07a098;
   border-radius: 10px;
+  margin-bottom: 27px;
+}
+.contForWidth {
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
 }
 .course-item {
   display: flex;
@@ -57,6 +67,93 @@
 }
 
 /* SECOND SECTION */
+.secondSect {
+  width: 100%;
+  height: 440px;
+  background: #ffffff;
+  /* background:rebeccapurple; */
+  border-radius: 15px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 35px 49px;
+}
+.sect1 {
+  width: 70%;
+}
+.sect2 {
+  width: 25%;
+}
+.sectDetails {
+  /* border: blue 3px solid; */
+  display: flex;
+  justify-content: space-between;
+}
+.sectDetails h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #07a098;
+}
+.sectDetails button{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 20px;
+width: 164px;
+height: 34px;
+background: rgba(144, 215, 255, 0.1);
+border-radius: 30px;
+font-style: normal;
+font-weight: normal;
+font-size: 13.19px;
+line-height: 20px;
+color: #07A098;
+}
+.actCont {
+  height: 200px;
+  /* border: hotpink 3px solid; */
+}
+.allActCont {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.actItem {
+  width: 33px;
+  background: #07a098;
+  position: relative;
+}
+.actItem h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #07a098;
+  z-index: 1000;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+}
+.actItem::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  opacity: 0.8;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+/* THIRD SECTION */
 
 .TopDisCont {
   height: 278px;
@@ -64,14 +161,12 @@
   display: flex;
   justify-content: space-between;
 }
-
 .TopDis {
   width: 68.5%;
-  padding: 16px 101px 16px 38px;
+  padding: 16px 101px 16px 35px;
   background: #ffffff;
   border-radius: 15px;
 }
-
 .TopDis h3 {
   font-style: normal;
   font-weight: normal;
@@ -81,7 +176,6 @@
   align-items: center;
   color: #07a098;
 }
-
 .TopDiscusionText {
   border: 1px solid rgba(7, 160, 152, 0.05);
   padding: 10px 0;
@@ -104,7 +198,6 @@
   align-items: flex-end;
   color: #07a098;
 }
-
 .EngRate {
   width: 30%;
   background-color: rgb(87, 51, 51);

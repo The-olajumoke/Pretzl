@@ -12,13 +12,20 @@ import history from "../utils/history";
 function LogInUser({ activeModal, setactiveModal }) {
   const [guest, setGuest] = useState(false);
   const [user, setUser] = useState(false);
-
-  const handleSubmit = () => {
-    alert("form submitted Successfully");
-  };
+  
   const handleBack = () => {
     history.push("./");
   };
+  const handleSubmit = async (values, actions) => {
+    const newUser = {
+      email: values.email,
+      password: values.password,
+    };
+
+    // await dispatch(signup(newUser));
+    // actions.setSubmitting(false);
+  };
+
   return (
     <Page>
       <SignInCont

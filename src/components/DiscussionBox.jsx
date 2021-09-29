@@ -1,7 +1,8 @@
 import React from "react";
-import { MdChatBubbleOutline } from "react-icons/md";
+import { MdChatBubbleOutline, MdContentCopy, MdLock, MdLockOpen } from "react-icons/md";
 import "../Styling/Discussion.css";
 import img from "../Exports/DisIcon.svg";
+import { BsThreeDotsVertical } from "react-icons/bs";
 function DiscussionBox({ title, code,name, numberOfPeople, date }) {
   return (
     <div className="discBox">
@@ -16,19 +17,20 @@ function DiscussionBox({ title, code,name, numberOfPeople, date }) {
             <h5>{numberOfPeople}</h5>
           </div>
           <div className="flex">
-            <MdChatBubbleOutline />
-            <MdChatBubbleOutline />
+              <MdLock/>
+              <BsThreeDotsVertical/>
           </div>
         </div>
       </div>
 
-      <div className="flex boxDetail">
+      <div className="boxDetail">
         <h2>{title}</h2>
         <h4>{date}</h4>
       </div>
 
       <div className="boxfooter">
         <h4>{code}</h4>
+        <MdContentCopy/>
         <button>Open</button>
       </div>
     </div>

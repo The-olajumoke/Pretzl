@@ -1,15 +1,20 @@
-.notiMain{
-    
-}
 
 .notificationCont {
   display: flex;
+  background-color: #FAFAFA;
   flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 40px 50px 10px 41px;
+  /* overflow-y: scroll; */
 }
-
+.notiHeader{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  height: 50px;
+}
 .leadText {
   font-style: normal;
   font-weight: normal;
@@ -33,7 +38,6 @@ hr {
   padding: 20px 14px 15px;
   position: absolute;
   width: 15%;
-  /* left: 1186.55px; */
   right: 0px;
   top: 40px;
   background: #fcfcfc;
@@ -52,24 +56,27 @@ hr {
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-}
+
+} 
 .allNotifications::-webkit-scrollbar {
   display: none;
 }
 .postCont {
   width: 100%;
   height: 146.22px;
-  /* border: 1px solid lime; */
-  /* margin: 20px 0; */
-  padding: 20px 0;
+  margin: 20px 0;
+  
+  /* padding: 20px 0; */
   justify-content: flex-start;
   border-bottom: 1px solid rgba(0, 30, 47, 0.35);
   display: flex;
+
 }
 .postsubcont {
   display: flex;
   justify-content: flex-start;
-  width: 60%;
+  width: 65%;
+
 }
 .postIcon {
   height: 100%;
@@ -87,6 +94,7 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+
 }
 .avatars {
   display: flex;
@@ -102,6 +110,7 @@ hr {
   color: #001e2f;
 }
 .avatars .time {
+
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -118,8 +127,10 @@ hr {
 }
 .moreInfo {
   display: flex;
+
 }
 .moreInfo h4 {
+
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -151,4 +162,31 @@ hr {
   color: #686868;
 
   flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  .notiHeader{
+    display: none;
+  }
+.notificationCont{
+  padding-top: 0;
+
+
+}}
+@media (max-width: 815px) {
+  .postCont {
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .postsubcont {
+    width: 100%;
+  }
+
+  .notificationCont {
+    padding: 20px 20px 10px;
+  }
+  .moreInfo h4{
+    font-size: 12px;
+  }
 }

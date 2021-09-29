@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import "../../Styling/BodyWrapper.css";
-import "../../Styling/SideBar.css";
-import avatar from "../../Exports/Avatar.svg";
 import NavItem from "./NavItem";
 import { FiBarChart } from "react-icons/fi";
 import { MdShowChart } from "react-icons/md";
@@ -10,22 +7,15 @@ import { MdHeadsetMic } from "react-icons/md";
 import { FaRegCalendar } from "react-icons/fa";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { MdChatBubbleOutline } from "react-icons/md";
-import NavIcon from "./NavIcon";
-import ResponsiveSideBar from "./ResponsiveSideBar";
-
-function Sidebar({ navSize, setNavSize }) {
+function ResponsiveSideBar({ navSize, avatar }) {
   return (
-    <>
-    <nav
-      style={{ width: `${navSize == "small" ? "109px" : "25%"}` }}
-      className="side-Cont font-Poppins"
-    >
+    <nav className="responNav">
       <div
-        className={`userDetailsCont     ${
+        className={`userDetailsCont  ring    ${
           navSize == "small" ? "justify-end" : "justify-center"
         }    ${navSize == "small" ? "pr-3" : ""}  `}
       >
-        <img className={`user-img`} src={avatar} alt="" />
+        {/* <img className={`user-img`} src={avatar} alt="" /> */}
         <div className={`details ${navSize == "small" ? "hidden" : "flex"} `}>
           <h3>Patrick Dempsey</h3>
           <span>@patrick</span>
@@ -86,7 +76,7 @@ function Sidebar({ navSize, setNavSize }) {
         />
       </div>
       <div
-        className={`downBtnCont
+        className={`my-14  w-full flex  
          ${navSize == "small" ? "" : "px-12"}
             ${navSize == "small" ? "pr-3" : ""}
     ${navSize == "small" ? "justify-end" : "justify-items-start"}`}
@@ -95,12 +85,12 @@ function Sidebar({ navSize, setNavSize }) {
           className={`upgradeBtn  ${navSize == "small" ? "p-3" : "p-3"}`}
           style={{ width: `${navSize == "small" ? "auto" : "230px"}` }}
         >
-          <NavIcon
-            className={`nav-icon ${navSize == "small" ? "" : "mr-4"}
+          {/* <NavIcon
+                className={`nav-icon ${navSize == "small" ? "" : "mr-4"}
             
             `}
-            icon={<FaRegCalendar />}
-          />
+                icon={<FaRegCalendar />}
+              /> */}
           <h3
             className={` ${navSize == "small" ? "hidden" : "flex"}
           `}
@@ -110,8 +100,7 @@ function Sidebar({ navSize, setNavSize }) {
         </button>
       </div>
     </nav>
-    </>
   );
 }
 
-export default Sidebar;
+export default ResponsiveSideBar;

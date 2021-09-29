@@ -1,17 +1,34 @@
 import React from "react";
+import { FiPlus } from "react-icons/fi";
+import { IoMdArrowDropdown } from "react-icons/io";
 import BodyWrapper from "../components/BodyWrapper";
 import DiscussionBox from "../components/DiscussionBox";
+import ResponsiveTop from "../components/ResponsiveTop"
 import "../Styling/Discussion.css";
+
 
 function Discussion() {
   return (
     <BodyWrapper>
-      <div className="disMain">
+        <ResponsiveTop title="Discussion Title"/>
+      <div className="disMain ">
         <div className="disCont ">
           <div className="discBtnCont">
-            <button className="discBtn">Create new discussion</button>
+            <button 
+            className="discBtn">
+                <FiPlus/>
+                Create new discussion
+                <IoMdArrowDropdown/>
+                </button>
           </div>
           <div className="allDisCont">
+            <DiscussionBox
+              title="Price Action in Foreign Exchange"
+              date="Mar 21"
+              numberOfPeople="4"
+              name="Patrick Dempsey"
+              code="51RP70F"
+            />
             <DiscussionBox
               title="Price Action in Foreign Exchange"
               date="Mar 21"

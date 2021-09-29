@@ -3,15 +3,19 @@ import BodyWrapper from "../components/BodyWrapper";
 import TopDiscusionText from "../components/Analytics/TopDiscusionText";
 import "../Styling/Analytics.css";
 import OverviewImg from "../Exports/dashboard/Pie Circular@2x.png";
+import Courses from "../components/Analytics/Courses";
+import ResponsiveTop from "../components/ResponsiveTop";
+import { IoMdArrowDropdown } from "react-icons/io";
 function Overview() {
   return (
     <BodyWrapper>
-      <div className=" overMain">
-        <div className=" overviewCont ring ring-red">
+      <ResponsiveTop title="Analytics" />
+      <div className=" overMain ">
+        <div className=" overviewCont ">
           {/* first section */}
           {/*Courses  */}
           <div className="courses-overview">
-            <div className="w-1/2 flex justify-between ">
+            <div className="contForWidth">
               <div className="course-item">
                 <h4>Courses</h4>
                 <h2>14</h2>
@@ -29,7 +33,32 @@ function Overview() {
 
           {/* SECOND SECTION */}
           {/*Discussions*/}
-          <div className=" "></div>
+          <div className="secondSect">
+            <div className=" sect1">
+              <div className="sectDetails">
+                <h3>
+                  Activity Chart
+                  <IoMdArrowDropdown />
+                </h3>
+                <button>
+                  This month
+                  <IoMdArrowDropdown />
+                </button>
+              </div>
+
+              <Courses />
+            </div>
+            <div className="ring sect2">
+              <div>
+                <input type="radio" name="type" id="" />
+                <label>Users</label>
+              </div>
+              <div>
+                <input type="radio" name="type" id="" />
+                <label>Posts</label>
+              </div>
+            </div>
+          </div>
           {/* THIRD SECTION */}
           {/*Thread*/}
           <div className="TopDisCont">
